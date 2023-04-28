@@ -1,3 +1,5 @@
+/* Font importing */
+
 @font-face {
     font-family: TTNooksBold;
     src: url(/fonts/TT\ Nooks\ Bold.otf);
@@ -7,6 +9,12 @@
     font-family: Mentone;
     src: url(/fonts/Mentone-Regular.ttf);
   }  
+
+/* Set the root font size */
+
+html {
+  font-size: 16px;
+}
 
 h1 {
     font-family: 'TTNooksBold', 'Times New Roman', serif;
