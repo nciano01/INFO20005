@@ -13,22 +13,22 @@
 /* Set the root font size */
 
 html {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 h1 {
     font-family: 'TTNooksBold', 'Times New Roman', serif;
     font-weight: bold;
-    size: 4rem;
+    font-size: 4rem;
 }
 
 h2 {
   font-family: 'TTNooksBold', 'Times New Roman', serif;
   font-weight: bold;
-  size: 2rem;
+  font-size: 2rem;
 }
 
 p {
   font-family: 'Mentone', 'Helvetica Neue', sans-serif;
-  size: 1rem;
+  font-size: 1rem;
 }
