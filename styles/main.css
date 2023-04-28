@@ -1,1 +1,8 @@
 @import url(fonts.css);
+
+.button {
+    font-family: 'TTNooksBold', 'Times New Roman', serif;
+    font-weight: bold;
+    color: #E6C67D;
+    background-color: #262F40;
+}
