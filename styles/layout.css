@@ -7,6 +7,13 @@
     text-align: center;
 }
 
+/* Home layout */
+
+.homegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 /* Button layout */
 
 .button {
