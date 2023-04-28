@@ -27,6 +27,7 @@
 .button {
     font-family: 'TTNooksBold', 'Times New Roman', serif;
     font-weight: bold;
+    font-size: 2rem;
     color: var(--color-secondary);
     background-color: var(--color-primary);
     border-width: 0px 0px 2px 2px;
