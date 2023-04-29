@@ -50,9 +50,14 @@
 }
 
 .backdrop-image {
-    width: 100%;
+    width: 50%;
+    height: 100vh;
     z-index: -1;
     position: absolute;
+}
+
+.backdrop-image--dinein {
+    grid-column: 1;
 }
 
 .backdrop-image--takeaway {
