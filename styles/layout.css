@@ -11,7 +11,7 @@
 
 .homegrid {
     display: grid;
-    grid-template-columns: 1fr 3fr 0.5fr 0.5fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
 }
 
 .dinein {
@@ -19,7 +19,7 @@
 }
 
 .takeaway {
-    grid-column: 5;
+    grid-column: 4;
 }
 
 /* Button layout */
@@ -40,11 +40,16 @@
     width: 10vw;
 }
 
+.backgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .backdrop-image {
     width: 100%;
     z-index: -1;
 }
 
 .backdrop-image--takeaway {
-    grid-column: 4/6;
+    grid-column: 2;
 }
