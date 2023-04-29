@@ -50,7 +50,6 @@
 }
 
 .backdrop-image {
-    width: 50%;
     height: 100vh;
     z-index: -1;
     position: absolute;
