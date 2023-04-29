@@ -45,8 +45,7 @@
 }
 
 .backgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
 }
 
 .backdrop-image {
@@ -56,10 +55,10 @@
     position: absolute;
 }
 
-.backdrop-image--dinein {
+/*.backdrop-image--dinein {
     float: left;
 }
 
 .backdrop-image--takeaway {
     float: right;
-}
+}*/
