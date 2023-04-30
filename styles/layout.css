@@ -9,15 +9,14 @@
 
 /* Home layout */
 
-/*.content {
-    position: relative;
-}*/
+.content {
+    place-self: center;
+}
 
 .homegrid {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
     color: var(--white);
-    justify-items: center;
 }
 
 .dinein {
