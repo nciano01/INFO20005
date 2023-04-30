@@ -44,20 +44,13 @@
     width: 10vw;
 }
 
-/*.backgrid {
-    display: flex;
-}*/
-
 .backdrop-image {
     width: 50%;
     height: 100vh;
     z-index: -1;
     position: absolute;
+    object-fit: cover;
 }
-
-/*.backdrop-image--dinein {
-    order: 0;
-}*/
 
 .backdrop-image--takeaway {
     right: 0;
