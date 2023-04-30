@@ -26,9 +26,11 @@ h2 {
   font-family: 'TTNooksBold', 'Times New Roman', serif;
   font-weight: bold;
   font-size: 2rem;
+  padding-bottom: 20px;
 }
 
 p {
   font-family: 'Mentone', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
+  padding-bottom: 20px;
 }

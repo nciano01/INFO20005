@@ -9,22 +9,23 @@
 
 /* Home layout */
 
-.content {
-    place-self: center;
-}
-
 .homegrid {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr 1fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     color: var(--white);
+    justify-items: center;
+    height: 100vh
 }
 
 .dinein {
     grid-column: 2;
+    grid-row: 3;
 }
 
 .takeaway {
     grid-column: 4;
+    grid-row: 3;
 }
 
 /* Button layout */
@@ -33,16 +34,30 @@
     font-family: 'TTNooksBold', 'Times New Roman', serif;
     font-weight: bold;
     font-size: 2rem;
+    height: 64px;
+    width: 200px;
     color: var(--color-secondary);
     background-color: var(--color-primary);
     border-width: 0px 0px 2px 2px;
     border-color: var(--color-secondary);
 }
 
+.button--takeaway {
+    grid-row: 4;
+    grid-column: 4;
+}
+
+.button--dinein {
+    grid-row: 4;
+    grid-column: 2;
+}
+
 /* Image layout */
 
 .hero-logo {
-    width: 10vw;
+    grid-column: 3;
+    grid-row: 2;
+    width: 400px;
 }
 
 .backdrop-image {
