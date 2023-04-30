@@ -16,6 +16,7 @@
 .homegrid {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+    color: var(--white);
 }
 
 .dinein {
@@ -50,6 +51,7 @@
     z-index: -1;
     position: absolute;
     object-fit: cover;
+    filter: brightness(50%);
 }
 
 .backdrop-image--takeaway {
