@@ -44,9 +44,9 @@
     width: 10vw;
 }
 
-.backgrid {
+/*.backgrid {
     display: flex;
-}
+}*/
 
 .backdrop-image {
     width: 50%;
@@ -56,9 +56,9 @@
 }
 
 /*.backdrop-image--dinein {
-    float: left;
-}
+    order: 0;
+}*/
 
 .backdrop-image--takeaway {
-    float: right;
-}*/
+    right: 100%;
+}
