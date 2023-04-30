@@ -45,7 +45,7 @@
 }
 
 .backgrid {
-    display: block;
+    display: flex;
 }
 
 .backdrop-image {
