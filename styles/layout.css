@@ -60,5 +60,5 @@
 }*/
 
 .backdrop-image--takeaway {
-    right: 100%;
+    background-position: right;
 }
