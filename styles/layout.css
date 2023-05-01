@@ -89,3 +89,9 @@ header {
     display: flex;
     gap: 20px;
 }
+
+.product-categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
