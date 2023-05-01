@@ -41,8 +41,10 @@ a {
   font-weight: bold;
   font-size: 1.3rem;
   text-transform: uppercase;
+  color: var(--white);
 }
 
 header > h2 {
   padding-bottom: 0px;
+  color: var(--white);
 }
