@@ -72,3 +72,19 @@
 .backdrop-image--takeaway {
     right: 0;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-links {
+    display: flex;
+    gap: 20px;
+}
+
+.right-links {
+    display: flex;
+    gap: 20px;
+}
