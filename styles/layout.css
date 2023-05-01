@@ -78,6 +78,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 25px 15px;
+    background-color: var(--color-primary);
 }
 
 .left-links {
