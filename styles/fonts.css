@@ -42,3 +42,7 @@ a {
   font-size: 1.3rem;
   text-transform: uppercase;
 }
+
+header > h2 {
+  padding-bottom: 0px;
+}
