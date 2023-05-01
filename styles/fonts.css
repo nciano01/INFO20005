@@ -40,4 +40,5 @@ a {
   font-family: 'TTNooksBold', 'Times New Roman', serif;
   font-weight: bold;
   font-size: 1.3rem;
+  text-transform: uppercase;
 }
