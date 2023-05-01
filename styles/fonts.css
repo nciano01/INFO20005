@@ -34,3 +34,10 @@ p {
   font-size: 1rem;
   padding-bottom: 20px;
 }
+
+a {
+  text-decoration: none;
+  font-family: 'TTNooksBold', 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
