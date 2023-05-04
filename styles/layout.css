@@ -98,6 +98,16 @@ header {
     gap: 20px;
 }
 
+#left-links {
+    display: flex;
+    gap: 20px;
+}
+
+#right-links {
+    display: flex;
+    gap: 20px;
+}
+
 .right-links {
     display: flex;
     gap: 20px;
