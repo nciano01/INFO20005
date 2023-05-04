@@ -78,6 +78,10 @@
     .button--dinein {
         display: none;
     }
+
+    p {
+        display:none;
+    }
 }
 
 /* Image layout */
