@@ -97,8 +97,6 @@
 
 /* Button layout */
 
-
-
 .button--takeaway {
     grid-row: 4;
     grid-column: 5;
@@ -144,6 +142,10 @@ header {
     align-items: center;
     padding: 25px 15px;
     background-color: var(--color-primary);
+}
+
+.active {
+    color: var(--color-secondary);
 }
 
 .header-image {
@@ -248,7 +250,6 @@ header {
     
     .right-links {
         display: flex;
-
     }
 }
 
