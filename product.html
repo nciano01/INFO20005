@@ -10,7 +10,7 @@
     
     <body>
         <header>
-            <ul class="left-links">
+            <ul id="left-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -18,7 +18,7 @@
             <a href="index.html">
                 <img class="header-image" src="images/whiteLogo.png">
             </a>
-            <ul class="right-links">
+            <ul id="right-links">
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Dine In</a></li>
                 <li><a href="product.html">Take Away</a></li>
@@ -95,5 +95,14 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            const rightLinkCont = document.getElementById("right-links");
+            const leftLinkCont = document.getElementById("left-links");
+
+            const rightLinkContWidth = rightLinkCont.offsetWidth;
+
+            leftLinkCont.style.width = rightLinkContWidth + 'px';
+        </script>
     </body>
 </html>
