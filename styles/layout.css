@@ -36,30 +36,30 @@
 
 @media screen and (max-width:1000px) {
     .homegrid {
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 5fr 1fr 1fr 5fr;
         grid-template-columns: 1fr 1fr;
         height: 100vh;
 }
     
     .dinein {
         grid-column: 1;
-        grid-row: 1;
+        grid-row: 2;
         align-self: end;
         margin: 0 0 0 auto;
     }
     
     .takeaway {
         grid-column: 2;
-        grid-row: 2;
+        grid-row: 3;
         align-self: start;
         margin: 0 auto 0 0;
     }
 
     .hero-logo {
-        /*grid-row: 1;
+        grid-row: 1;
+        grid-column: 1/3;
         align-self: center;
-        width: 200px;*/
-        display:none;
+        width: 300px;
     }
 }
 
