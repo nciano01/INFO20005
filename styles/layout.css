@@ -81,6 +81,10 @@ header {
     background-color: var(--color-primary);
 }
 
+.header-image {
+    height: 3em;
+}
+
 .left-links {
     display: flex;
     gap: 20px;
