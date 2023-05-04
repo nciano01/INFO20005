@@ -27,7 +27,6 @@
     grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr 1fr 0.5fr;
     color: var(--white);
     justify-items: center;
-    height: 100vh;
 }
 
 .dinein {
@@ -59,8 +58,6 @@
         align-self: end;
         margin: 0 0 0 auto;
     }
-    
-    
 
     .takeaway {
         grid-column: 2;
@@ -99,8 +96,6 @@
 
 /* Button layout */
 
-
-
 .button--takeaway {
     grid-row: 4;
     grid-column: 5;
@@ -130,7 +125,6 @@
 
 .backdrop-image {
     width: 50%;
-    height: 100vh;
     z-index: -1;
     position: absolute;
     object-fit: cover;
@@ -147,6 +141,10 @@ header {
     align-items: center;
     padding: 25px 15px;
     background-color: var(--color-primary);
+}
+
+.active {
+    color: var(--color-secondary);
 }
 
 .header-image {
@@ -251,7 +249,6 @@ header {
     
     .right-links {
         display: flex;
-
     }
 }
 
@@ -262,6 +259,7 @@ header {
 }
 
 /* product list layout */
+
 .product-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
