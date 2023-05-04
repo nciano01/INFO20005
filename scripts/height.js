@@ -1,3 +1,4 @@
+window.addEventListener("load", heightEquivalence);
 window.addEventListener("resize", heightEquivalence);
 
 function heightEquivalence() {
