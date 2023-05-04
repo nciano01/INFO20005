@@ -260,3 +260,9 @@ header {
     justify-content: center;
     gap: 20px;
 }
+
+/* product list layout */
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
