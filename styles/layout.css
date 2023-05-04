@@ -81,6 +81,18 @@ header {
     background-color: var(--color-primary);
 }
 
+.header-image {
+    height: 3em;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+.cart-icon {
+    display: none;
+}
+
 .left-links {
     display: flex;
     gap: 20px;
@@ -89,6 +101,27 @@ header {
 .right-links {
     display: flex;
     gap: 20px;
+}
+
+@media screen and (max-width:1000px) {
+    .left-links {
+        display: none;
+    }
+
+    .right-links {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        height: 2em;
+        width: 3em;
+    }
+
+    .cart-icon {
+        display: flex;
+        height: 2em;
+    }
 }
 
 .product-categories {
