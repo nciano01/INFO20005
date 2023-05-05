@@ -289,12 +289,14 @@ footer {
 }
 
 .footer-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding-bottom: 10px;
     color: var(--color-secondary);
 }
 
 .footer-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding-bottom: 10px;
     color: white;
 }
 
@@ -302,17 +304,29 @@ footer {
     padding-top: 20px;
 }
 
+.footer-hours {
+    padding-right: 25px;
+}
+
 
 @media screen and (max-width:1000px) {
     .footer-contents {
+        display: flex;
+        justify-content: right;
         column-gap: 20px;
     }
+
     .footer-title {
+        padding-bottom: 5px;
         font-size: 0.7rem;
     }
     .footer-text {
         font-size: 0.7rem;
-        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+
+    .footer-hours {
+        padding-right: 10px;
     }
 }
 
