@@ -43,8 +43,3 @@ a {
   text-transform: uppercase;
   color: var(--white);
 }
-
-header > h2 {
-  padding-bottom: 0px;
-  color: var(--white);
-}
