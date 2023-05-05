@@ -301,3 +301,8 @@ footer {
 .product-card > img {
     border-radius: 15px 15px 0px 0px;
 }
+
+.price {
+    display: flex;
+    justify-content: end;
+}
