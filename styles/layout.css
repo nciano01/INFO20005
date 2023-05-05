@@ -129,7 +129,7 @@ body {
         display: none;
     }
 
-    p {
+    .option-description {
         display: none;
     }
 }
@@ -280,6 +280,40 @@ footer {
     background-repeat: no-repeat;
     background-size: 500px;
     background-color: black;
+}
+
+.footer-contents {
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+}
+
+.footer-text {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footer-contact {
+    padding-top: 20px;
+    grid-column: 2;
+}
+
+.footer-hours {
+    padding-top: 20px;
+    grid-column: 3;
+}
+
+@media screen and (max-width:1000px) {
+    .footer-contents {
+        grid-gap: 20px;
+    }
+    .footer-title {
+        font-size: 1rem;
+    }
 }
 
 /* product list layout */
