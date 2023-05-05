@@ -46,12 +46,17 @@
     width: 400px;
 }
 
+.grid-end {
+    padding: 20px;
+    grid-row: 5;
+}
+
 @media screen and (max-width:1000px) {
     .homegrid {
         grid-template-rows: 5fr 1fr 1fr 5fr;
         grid-template-columns: 1fr 1fr;
         height: 100vh;
-}
+    }
     
     .dinein {
         grid-column: 1;
