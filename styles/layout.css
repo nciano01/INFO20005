@@ -386,6 +386,10 @@ footer {
 
 /* product categories button layout */
 
+.product-categories {
+    padding: 40px 0px 40px 0px;
+}
+
 .product-categories > button {
     height: 40px;
     width: 160px;
