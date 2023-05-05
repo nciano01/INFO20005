@@ -277,10 +277,15 @@ header {
 .product-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
 }
 
-.product-card > img {
-    border-radius: 15px 15px 0px 0px;
+.product-card {
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: var(--white);
 }
 
 .product-card > img {
