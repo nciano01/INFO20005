@@ -356,11 +356,12 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-items: center;
+    gap: 30px;
 }
 
 .product-card {
     width: 200px;
-    height: 300px;
+    height: auto;
     border-radius: 15px;
     background-color: var(--white);
 }
@@ -372,4 +373,12 @@ footer {
 .price {
     display: flex;
     justify-content: end;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product-info > p {
+    padding-top: 5px;
 }
