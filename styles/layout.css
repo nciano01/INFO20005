@@ -276,20 +276,21 @@ header {
 
 footer {
     display: block;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) ),url("/images/footer.jpg");
+    background-image: url("/images/footer.jpg");
     background-repeat: no-repeat;
-    background-size: 500px;
+    background-size: auto 100%;
     background-color: black;
 }
 
 .footer-contents {
-    display: grid;
-    grid-template-columns: 10fr 1fr 1fr;
-    grid-gap: 50px;
+    display: flex;
+    justify-content: right;
+    column-gap: 50px;
 }
 
 .footer-title {
     font-size: 1.5rem;
+    color: var(--color-secondary);
 }
 
 .footer-text {
@@ -297,22 +298,21 @@ footer {
     color: white;
 }
 
-.footer-contact {
+.footer-contact, .footer-hours {
     padding-top: 20px;
-    grid-column: 2;
 }
 
-.footer-hours {
-    padding-top: 20px;
-    grid-column: 3;
-}
 
 @media screen and (max-width:1000px) {
     .footer-contents {
-        grid-gap: 20px;
+        column-gap: 20px;
     }
     .footer-title {
         font-size: 1rem;
+    }
+    .footer-text {
+        font-size: 1rem;
+        padding-right: 5px;
     }
 }
 
