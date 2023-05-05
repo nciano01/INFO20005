@@ -1,5 +1,8 @@
 /* General */
 
+body {
+    background-color: var(--color-primary);
+}
 .centre {
     display: block;
     margin-left: auto;
@@ -283,4 +286,8 @@ header {
     height: 300px;
     border-radius: 15px;
     background-color: var(--white);
+}
+
+.product-card > img {
+    border-radius: 15px 15px 0px 0px;
 }
