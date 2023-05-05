@@ -309,6 +309,8 @@ footer {
     color: var(--white);
 }
 
+
+
 .footer-contact, .footer-hours {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -331,6 +333,13 @@ footer {
         font-size: 0.7rem;
     }
     .footer-text {
+        font-size: 0.7rem;
+        padding-bottom: 5px;
+    }
+
+    a[href^="tel"] {
+        color: inherit;
+        text-decoration: none;
         font-size: 0.7rem;
         padding-bottom: 5px;
     }
