@@ -1,5 +1,8 @@
 /* General */
 
+body {
+    background-color: var(--color-primary);
+}
 .centre {
     display: block;
     margin-left: auto;
@@ -274,4 +277,12 @@ header {
 .product-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.product-card > img {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.product-card > img {
+    border-radius: 15px 15px 0px 0px;
 }
