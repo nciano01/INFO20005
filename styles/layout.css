@@ -302,6 +302,7 @@ footer {
 
 .footer-contact, .footer-hours {
     padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .footer-hours {
