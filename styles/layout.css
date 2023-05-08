@@ -363,12 +363,18 @@ footer {
 .product-card {
     width: 200px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 1em;
     background-color: var(--white);
+    overflow: hidden;
+    position: relative;
 }
 
 .product-card > img {
-    border-radius: 15px 15px 0px 0px;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    top: 0;
+    object-fit: cover;
 }
 
 .price {
