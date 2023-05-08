@@ -382,6 +382,7 @@ footer {
     bottom: 0;
     height: 30%;
     display: flex;
+    flex-direction: column;
 }
 
 .product-info > p {
