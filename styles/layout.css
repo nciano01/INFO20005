@@ -414,3 +414,12 @@ footer {
     padding-bottom: 0px;
     text-transform: uppercase;
 }
+
+/* product page layout */
+.productpg-card {
+    width: 800px;
+    height: 200px;
+    border-radius: 1em;
+    background-color: var(--white);
+    overflow: hidden;
+}
