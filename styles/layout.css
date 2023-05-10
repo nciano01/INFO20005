@@ -355,9 +355,10 @@ footer {
 .product-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
     justify-items: center;
     gap: 30px;
+    height: 100%;
 }
 
 .product-card {
