@@ -1,3 +1,9 @@
+document.getElementById('mezze').style.display = 'none';
+document.getElementById('popular').style.display = 'block';
+document.getElementById('main-course').style.display = 'none';
+document.getElementById('sides').style.display = 'none';
+document.getElementById('dessert').style.display = 'none';
+
 function mezzeProducts() {
     document.getElementById('mezze').style.display = 'block';
     document.getElementById('popular').style.display = 'none';
