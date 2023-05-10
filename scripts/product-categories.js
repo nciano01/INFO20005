@@ -4,6 +4,22 @@ function mezzeProducts() {
     document.getElementById('main-course').style.display = 'none';
     document.getElementById('sides').style.display = 'none';
     document.getElementById('dessert').style.display = 'none';
+    var mainElems = document.getElementsByClassName('mezze');
+        for (var i=0; i<mainElems.length; i++) {
+            mainElems[i].style.display = 'block';
+        }
+    var mainElems = document.getElementsByClassName('main');
+        for (var i=0; i<mainElems.length; i++) {
+            mainElems[i].style.display = 'none';
+        }
+    var mainElems = document.getElementsByClassName('sides');
+        for (var i=0; i<mainElems.length; i++) {
+            mainElems[i].style.display = 'none';
+        }
+    var mainElems = document.getElementsByClassName('dessert');
+        for (var i=0; i<mainElems.length; i++) {
+            mainElems[i].style.display = 'none';
+        }
 }
 
 function mainCourseProducts() {
