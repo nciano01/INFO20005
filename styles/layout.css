@@ -431,6 +431,8 @@ footer {
     position: absolute;
     left: 0;
     width: 30%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product-descrip {
