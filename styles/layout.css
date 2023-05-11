@@ -469,3 +469,7 @@ footer {
     border-width: 0px 0px 2px 2px;
     border-color: var(--color-secondary);
 }
+
+.qty-cart-button {
+    display: flex;
+}
