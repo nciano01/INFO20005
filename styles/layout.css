@@ -417,6 +417,10 @@ footer {
 
 /* product page layout */
 
+.product-header {
+    padding-left: 25px;
+}
+
 .productpg-card {
     width: calc(100vw - 25px);
     height: 330px;                                                          
@@ -424,7 +428,7 @@ footer {
     background-color: var(--white);
     overflow: hidden;
     position: relative;
-    margin: 25px 0 25px 25px;
+    margin: 0 0 25px 25px;
 
 }
 
