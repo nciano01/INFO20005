@@ -425,7 +425,6 @@ footer {
     overflow: hidden;
     position: relative;
     margin: 0 0 25px 25px;
-
 }
 
 .productpg-card > img {
@@ -465,4 +464,6 @@ footer {
 
 .primary-button {
     background-color: var(--color-primary);
+    border-width: 0px 0px 2px 2px;
+    border-color: var(--color-secondary);
 }
