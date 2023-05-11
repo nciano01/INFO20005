@@ -418,8 +418,21 @@ footer {
 /* product page layout */
 .productpg-card {
     width: 800px;
-    height: 200px;
+    height: 200px;                                                          
     border-radius: 1em;
     background-color: var(--white);
     overflow: hidden;
+    position: relative;
+}
+
+.productpg-card > img {
+    position: absolute;
+    left: 0;
+    width: 30%;
+}
+
+.product-descrip {
+    position: absolute;
+    right: 0;
+    width: 70%;
 }
