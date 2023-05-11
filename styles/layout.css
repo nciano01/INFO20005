@@ -416,6 +416,7 @@ footer {
 }
 
 /* product page layout */
+
 .productpg-card {
     width: 800px;
     height: 300px;                                                          
@@ -442,4 +443,14 @@ footer {
     justify-content: end;
     background-color: var(--light-grey);
     border-radius: 1em;
+}
+
+.selected {
+    background-color: var(--white);
+    border: 2px solid var(--color-tertiary);
+}
+
+.not-selected {
+    background-color: var(--white);
+    border: 2px solid var(--light-grey);
 }
