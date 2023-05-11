@@ -55,7 +55,7 @@ h4 {
   color: var(--color-tertiary);
 }
 
-.please-select > p {
+.please-select {
   padding-bottom: 0px;
   color: var(--white);
 }
