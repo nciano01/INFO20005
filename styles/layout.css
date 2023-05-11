@@ -268,7 +268,6 @@ header {
     
     .left-links {
         display: flex;
-
     }
     
     .right-links {
@@ -459,4 +458,8 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: var(--light-grey);
+}
+
+.primary-button {
+    background-color: var(--color-primary);
 }
