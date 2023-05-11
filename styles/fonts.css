@@ -62,4 +62,5 @@ h4 {
 
 .quantity > p {
   padding-bottom: 0px;
+  color: var(--white);
 }
