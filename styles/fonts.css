@@ -51,6 +51,12 @@ h4 {
   font-weight: 600;
 }
 
+.product-categories > button {
+  font-family: 'TTNooksBold', 'Times New Roman', serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 .product-info > p {
   color: var(--color-tertiary);
 }
@@ -69,7 +75,7 @@ h4 {
   font-family: 'TTNooksBold', 'Times New Roman', serif;
   font-weight: bold;
   font-size: 1rem;
-  color: var(--white);
+  color: var(--color-secondary);
   text-transform: uppercase;
   padding: 10px 80px 4px 80px;
 }
