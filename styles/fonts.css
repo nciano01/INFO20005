@@ -64,3 +64,12 @@ h4 {
   padding-bottom: 0px;
   color: var(--white);
 }
+
+.primary-button {
+  font-family: 'TTNooksBold', 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 10px 80px 4px 80px;
+}
