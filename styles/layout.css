@@ -418,7 +418,7 @@ footer {
 /* product page layout */
 .productpg-card {
     width: 800px;
-    height: 200px;                                                          
+    height: 300px;                                                          
     border-radius: 1em;
     background-color: var(--white);
     overflow: hidden;
