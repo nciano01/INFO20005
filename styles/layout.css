@@ -407,11 +407,8 @@ footer {
     border-width: 0px 0px 2px 2px;
     background-color: var(--white);
     border-color: var(--color-secondary);
-    font-family: 'TTNooksBold', 'Times New Roman', serif;
-    font-size: 1rem;
     border-radius: 8px;
     padding-bottom: 0px;
-    text-transform: uppercase;
 }
 
 /* product page layout */
