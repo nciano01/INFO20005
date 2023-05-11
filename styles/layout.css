@@ -473,3 +473,7 @@ footer {
 .qty-cart-button {
     display: flex;
 }
+
+.total-price {
+    display: flex;
+}
