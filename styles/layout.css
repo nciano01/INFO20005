@@ -436,3 +436,10 @@ footer {
     right: 0;
     width: 70%;
 }
+
+.please-select {
+    display: flex;
+    justify-content: end;
+    background-color: var(--light-grey);
+    border-radius: 1em;
+}
