@@ -448,15 +448,24 @@ footer {
     border-radius: 1em;
 }
 
+.options {
+    display: flex;
+    gap: 20px;
+}
+
 .selected {
     background-color: var(--white);
     border: 2px solid var(--color-tertiary);
+    height: 36px;
+    width: 160px;
 }
 
 .not-selected {
     background-color: var(--white);
     border: 2px solid var(--light-grey);
     color: var(  --medium-grey);
+    height: 36px;
+    width: 160px;
 }
 
 .quantity {
