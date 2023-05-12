@@ -207,10 +207,11 @@ header {
 
 .mobile-nav {
     display: none;
-    position: relative;
+    position: absolute;
     text-align: center;
     width: 100vw;
     height: 100vh;
+    background-color: var(--color-primary);
 }
 
 .mobile-links {
