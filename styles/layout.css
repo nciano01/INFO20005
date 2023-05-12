@@ -10,6 +10,10 @@ body {
     text-align: center;
 }
 
+.content {
+    min-height: 100vh;
+}
+
 /* Home layout */
 
 .button {
@@ -318,7 +322,11 @@ header {
 /* footer layout */
 
 footer {
-    display: block;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    bottom: 0;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) ),url("/images/footer.jpg");
     background-repeat: no-repeat;
     background-size: auto 100%;
