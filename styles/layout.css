@@ -218,9 +218,10 @@ header {
 
 .nav-exit {
     position: absolute;
-    height: 50px;
+    height: 40px;
     left: 0;
-    padding: 50px;
+    top: 0;
+    padding: 40px 20px;
 }
 
 .mobile-links {
