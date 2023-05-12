@@ -205,6 +205,23 @@ header {
     gap: 20px;
 }
 
+.mobile-nav {
+    display: none;
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mobile-links {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    padding-top: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
 /* Mobile nav layout */
 
 @media screen and (max-width:1000px) {
