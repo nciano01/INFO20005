@@ -207,6 +207,8 @@ header {
 
 .mobile-nav {
     display: none;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     text-align: center;
     width: 100vw;

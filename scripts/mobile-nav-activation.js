@@ -1,7 +1,7 @@
 document.getElementsByClassName("hamburger-icon")[0].onclick = showNav;
 
 function showNav() {
-    document.getElementsByClassName("mobile-nav")[0].style.display = "block";
+    document.getElementsByClassName("mobile-nav")[0].style.display = "flex";
     document.getElementsByTagName("body")[0].style.position = "fixed";
     document.getElementsByTagName("body")[0].style.overflow = "hidden";
 }
