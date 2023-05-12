@@ -61,7 +61,11 @@ h4 {
   color: var(--color-tertiary);
 }
 
-.please-select {
+.product-descrip > p {
+  color: var(--color-tertiary);
+}
+
+.product-descrip .please-select {
   padding-bottom: 0px;
   color: var(--white);
 }
@@ -78,8 +82,4 @@ h4 {
   color: var(--color-secondary);
   text-transform: uppercase;
   padding: 10px 80px 4px 80px;
-}
-
-.product-descrip > p {
-  color: var(--color-tertiary);
 }
