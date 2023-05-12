@@ -79,3 +79,7 @@ h4 {
   text-transform: uppercase;
   padding: 10px 80px 4px 80px;
 }
+
+.product-descrip > p {
+  color: var(--color-tertiary);
+}
