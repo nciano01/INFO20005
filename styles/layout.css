@@ -456,6 +456,7 @@ footer {
 .not-selected {
     background-color: var(--white);
     border: 2px solid var(--light-grey);
+    color: var(  --medium-grey);
 }
 
 .quantity {
