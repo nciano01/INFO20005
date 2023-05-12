@@ -224,7 +224,7 @@ header {
 .mobile-links {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 100vh;
+    height: 50vh;
     padding-top: 10px;
     align-items: center;
     justify-items: center;
