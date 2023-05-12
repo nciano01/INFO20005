@@ -205,12 +205,15 @@ header {
     gap: 20px;
 }
 
+/* Mobile nav layout */
+
 .mobile-nav {
     display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
     text-align: center;
+    z-index: 99;
     width: 100vw;
     height: 100vh;
     background-color: var(--color-primary);
@@ -232,8 +235,6 @@ header {
     align-items: center;
     justify-items: center;
 }
-
-/* Mobile nav layout */
 
 @media screen and (max-width:1000px) {
     .left-links {
