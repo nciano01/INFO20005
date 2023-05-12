@@ -65,7 +65,7 @@ h4 {
   color: var(--color-tertiary);
 }
 
-.product-descrip .please-select {
+.please-select > p {
   padding-bottom: 0px;
   color: var(--white);
 }
