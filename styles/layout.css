@@ -468,6 +468,12 @@ footer {
     padding: 0px 5px 0px 5px;
 }
 
+.quantity > button {
+    background-color: var(--light-grey);
+    border: none;
+    color: var(--white);
+}
+
 .primary-button {
     background-color: var(--color-primary);
     border-width: 0px 0px 2px 2px;
