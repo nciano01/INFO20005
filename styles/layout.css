@@ -464,8 +464,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: var(--light-grey);
-    gap: 15px;
-    padding: 0px 5px 0px 5px;
+    gap: 10px;
+    padding: 0px 3px 0px 3px;
+    border-radius: 0.2em;
 }
 
 .quantity > button {
