@@ -447,7 +447,8 @@ footer {
 .please-select > button {
     background-color: var(--light-grey);
     border: none;
-    border-radius: 1em;
+    border-radius: 0.4em;
+    padding: 5px 12px 5px 12px;
 }
 
 .options {
