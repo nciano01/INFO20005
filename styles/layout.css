@@ -461,7 +461,10 @@ footer {
 .quantity {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--light-grey);
+    gap: 15px;
+    padding: 0px 5px 0px 5px;
 }
 
 .primary-button {
