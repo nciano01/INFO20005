@@ -326,8 +326,6 @@ footer {
     color: var(--white);
 }
 
-
-
 .footer-contact, .footer-hours {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -461,8 +459,13 @@ footer {
 .please-select {
     display: flex;
     justify-content: end;
+}
+
+.please-select > button {
     background-color: var(--light-grey);
-    border-radius: 1em;
+    border: none;
+    border-radius: 0.4em;
+    padding: 5px 12px 5px 12px;
 }
 
 .options {

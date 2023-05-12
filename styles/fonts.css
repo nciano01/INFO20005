@@ -65,8 +65,7 @@ h4 {
   color: var(--color-tertiary);
 }
 
-.please-select > p {
-  padding-bottom: 0px;
+.please-select > button {
   color: var(--white);
 }
 
