@@ -460,22 +460,14 @@ footer {
     border-radius: 1em 0 0 1em;
     background-color: var(--white);
     overflow: hidden;
-    position: relative;
     margin: 0 0 25px 25px;
+    display: flex;
 }
 
 .productpg-card > img {
-    position: absolute;
     left: 0;
-    width: 30%;
     height: 100%;
     object-fit: cover;
-}
-
-.product-descrip {
-    position: absolute;
-    right: 0;
-    width: 70%;
 }
 
 .please-select {
