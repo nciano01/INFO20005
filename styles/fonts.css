@@ -82,3 +82,7 @@ h4 {
   text-transform: uppercase;
   padding: 10px 80px 4px 80px;
 }
+
+.product-header {
+  color: var(--color-secondary);
+  text-shadow: 1.2px 1.2px var(--white);
