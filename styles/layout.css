@@ -456,7 +456,7 @@ footer {
 .productpg-card {
     display: inline-block;
     width: calc(100vw - 25px);
-    height: 330px;                                                          
+    height: auto;                                                          
     border-radius: 1em 0 0 1em;
     background-color: var(--white);
     overflow: hidden;
@@ -464,9 +464,11 @@ footer {
     display: flex;
 }
 
-.productpg-card > img {
-    left: 0;
-    height: 100%;
+.img-holder {
+    display: flex;
+}
+
+.img-holder > img {
     object-fit: cover;
 }
 
