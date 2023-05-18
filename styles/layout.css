@@ -450,6 +450,7 @@ footer {
 /* product page layout */
 
 .product-header {
+    margin-top: 25px;
     padding-left: 25px;
 }
 
