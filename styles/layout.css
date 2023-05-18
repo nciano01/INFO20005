@@ -583,6 +583,7 @@ footer {
     grid-column: 4;
     grid-row: 2/5;
     width: 100%;
+    height: fit-content;
     border-radius: 1em 1em 1em 1em;
     background-color: var(--white);
     overflow: hidden;
@@ -606,13 +607,13 @@ footer {
 .table-order-summary {
     width: 100%;
 }
-
 .cart-suggested-title {
     grid-column: 2;
     grid-row: 3;
 }
 .element-order-summary {
     font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .cart-suggested {
