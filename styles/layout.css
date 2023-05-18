@@ -10,6 +10,10 @@ body {
     text-align: center;
 }
 
+.right {
+    text-align: right;
+}
+
 /* Home layout */
 
 .button {
@@ -599,9 +603,16 @@ footer {
     margin-bottom: 1rem;
 }
 
+.table-order-summary {
+    width: 100%;
+}
+
 .cart-suggested-title {
     grid-column: 2;
     grid-row: 3;
+}
+.element-order-summary {
+    font-size: 1.5rem;
 }
 
 .cart-suggested {
