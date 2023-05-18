@@ -569,7 +569,8 @@ footer {
     grid-column: 2;
     grid-row: 2;
     width: 100%;
-    height: fit-content;                                                          
+    min-height: 300px;
+    max-height: fit-content;                                                          
     border-radius: 1em 1em 1em 1em;
     background-color: var(--white);
     overflow: hidden;
@@ -578,13 +579,12 @@ footer {
 }
 
 .cart-img {
-    width: 300px;
-    height: 300px;
+    object-fit: cover;
+    width: 200px;
+    height: 100%;
+    background-image: url(https://placehold.co/200x300);
 }
 
-.cart-img > img {
-    object-fit: cover;
-}
 
 .cart-order-summary {
     align-content: center;
@@ -623,9 +623,32 @@ footer {
 }
 
 .table-order-actions {
-    width: 100px;
+    width: 100%;
     bottom: 0;
     align-self: flex-end;
+}
+
+.button--action {
+    font-family: 'TTNooksBold', 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    height: 4rem;
+    text-transform: uppercase;
+    width: 4rem;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    border-width: 0px 0px 4px 4px;
+    border-color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.square-col {
+    width: 5rem;
+}
+
+.square-button-image {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .table-order-summary {
