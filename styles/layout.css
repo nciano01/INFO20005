@@ -26,7 +26,6 @@ body {
     background-color: var(--color-primary);
     border-width: 0px 0px 2px 2px;
     border-color: var(--color-secondary);
-
 }
 
 .homegrid {
@@ -658,6 +657,7 @@ footer {
     border-color: var(--color-secondary);
     margin-bottom: 1rem;
 }
+
 
 .square-col {
     width: 5rem;
