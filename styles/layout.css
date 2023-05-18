@@ -691,17 +691,27 @@ footer {
 .cart-suggested {
     margin: 0 1rem 0 0;
     margin-bottom: 20px;
-    display: inline-block;
     width: 50%;
     height: 300px;                                                          
     border-radius: 1em 1em 1em 1em;
     background-color: var(--white);
     overflow: hidden;
     display: flex;
+    flex-direction: row;
+    align-items: flex-end;
     background-position: center center;
     background-repeat: no-repeat; 
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) ),url(https://placehold.co/200x300);
     background-size: cover;
+}
+
+.suggested-info {
+    width: 100%
+}
+
+.table-addon {
+    width: 100%;
+    vertical-align: bottom;
 }
 
 .cart-button {
