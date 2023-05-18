@@ -565,18 +565,30 @@ footer {
     grid-column: 2;
 }
 
-.cart-table {
+.cart-items {
     grid-column: 2;
     grid-row: 2;
+}
+
+.cart-table {
     width: 100%;
     min-height: 300px;
     max-height: fit-content;                                                          
-    border-radius: 1em 1em 1em 1em;
     background-color: var(--white);
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
+
+.cart-table:nth-child(1) {                                                 
+    border-radius: 1em 1em 0 0;
+}
+
+.cart-table:nth-last-child(1) {                                                       
+    border-radius: 0 0 1em 1em;
+}
+
+
 
 .cart-img {
     object-fit: cover;
