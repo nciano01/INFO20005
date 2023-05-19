@@ -595,10 +595,12 @@ footer {
 }
 
 .cart-img {
-    object-fit: cover;
     width: 200px;
-    min-height: 200px;
+    height: inherit;
     background-image: url(https://placehold.co/200x300);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 
