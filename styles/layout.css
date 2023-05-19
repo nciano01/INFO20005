@@ -390,13 +390,15 @@ footer {
 
 /* product list layout */
 
+
+
 .product-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr auto;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     height: 100%;
+    justify-content: start;
+    background-color: aqua;
 }
 
 .product-card {
