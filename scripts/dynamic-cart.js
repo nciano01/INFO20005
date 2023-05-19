@@ -1,7 +1,7 @@
 window.addEventListener("load", priceCalc);
 
 function priceCalc() {
-    var allPrices = document.getElementsByClassName('price');
+    var allPrices = document.getElementsByClassName('item-price');
     var totalPrice = 0;
     for (var i=0; i<allPrices.length; i++) {
         var currPrice = allPrices[i].innerHTML.slice(1) * 1;
