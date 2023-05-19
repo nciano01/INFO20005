@@ -401,7 +401,7 @@ footer {
     height: auto;
     justify-content: start;
     margin: 40px auto 40px auto;
-    width: fit-content;
+    max-width: 970px;
     background-color: aqua;
 }
 
