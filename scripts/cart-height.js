@@ -11,7 +11,11 @@ function cartHeightEquivalence() {
         }
     }
     for (var i=0; i<cartItemCount.length; i++) {
-        console.log(maxHeight + "px")
         cartItemCount[i].style.height = maxHeight + "px";
+    }
+
+    var descripItemCount = document.getElementsByClassName('cart-descrip');
+    for (var i=0; i<descripItemCount.length; i++) {
+        descripItemCount[i].style.height = maxHeight + "px";
     }
 }
