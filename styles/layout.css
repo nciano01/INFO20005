@@ -402,7 +402,6 @@ footer {
     justify-content: start;
     margin: 40px auto 40px auto;
     max-width: 970px;
-    background-color: aqua;
 }
 
 .product-card {
@@ -584,6 +583,56 @@ footer {
     grid-template-columns: 1fr 5fr;
 }
 
+.cart-order-summary {
+    align-content: center;
+    position: sticky;
+    top: 1rem;
+    grid-column: 4;
+    grid-row: 2/5;
+    width: 100%;
+    height: fit-content;
+    border-radius: 1em 1em 1em 1em;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.cart-suggested {
+    margin: 0 1rem 20px 0;
+    width: 50%;
+    height: 300px;                                                          
+    border-radius: 1em 1em 1em 1em;
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) ),url(https://placehold.co/200x300);
+    background-size: cover;
+}
+
+@media screen and (max-width:1000px) {
+    .cart-elements {
+        display: block;
+    }
+    
+    .cart-items, .suggested-items {
+        margin: 20px;
+    }
+
+    .cart-suggested-title {
+        margin-left: 20px;
+    }
+
+    .cart-order-summary {
+        border-radius: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* formatting of cart based on the amount of items */
+
 .cart-table:nth-child(1) {        
     border-radius: 1em 1em 0 0;
 }
@@ -606,20 +655,6 @@ footer {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
-
-
-.cart-order-summary {
-    align-content: center;
-    position: sticky;
-    top: 1rem;
-    grid-column: 4;
-    grid-row: 2/5;
-    width: 100%;
-    height: fit-content;
-    border-radius: 1em 1em 1em 1em;
-    background-color: var(--white);
-    overflow: hidden;
 }
 
 .button--order {
@@ -695,23 +730,6 @@ footer {
 .element-order-summary {
     font-size: 1.5rem;
     padding-bottom: 1rem;
-}
-
-.cart-suggested {
-    margin: 0 1rem 0 0;
-    margin-bottom: 20px;
-    width: 50%;
-    height: 300px;                                                          
-    border-radius: 1em 1em 1em 1em;
-    background-color: var(--white);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    background-position: center center;
-    background-repeat: no-repeat; 
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) ),url(https://placehold.co/200x300);
-    background-size: cover;
 }
 
 .suggested-info {
