@@ -643,8 +643,7 @@ footer {
 
 .table-order-actions {
     width: 100%;
-    bottom: 0;
-    align-self: flex-end;
+    margin-top: auto;
 }
 
 .button--action {
@@ -673,6 +672,7 @@ footer {
 
 .table-order-summary {
     width: 100%;
+    align-items: flex-end;
 }
 
 .suggested-items {
@@ -727,4 +727,15 @@ footer {
 .in-box-title {
     color: var(--black);
     text-transform: uppercase;
+}
+
+.cart-descrip {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-flow: column;
+}
+
+.cart-descrip > h4 {
+    margin-bottom: 8px;
 }
