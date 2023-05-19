@@ -85,3 +85,8 @@ h4 {
   color: var(--color-secondary);
   text-shadow: 1.2px 1.2px var(--white);
 }
+
+.category-heading > h2 {
+  margin-left: 30px;
+  padding-bottom: 0px;
+}
