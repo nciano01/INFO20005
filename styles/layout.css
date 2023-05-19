@@ -390,20 +390,24 @@ footer {
 
 /* product list layout */
 
-
+.products-cont {
+    justify-content: center;
+}
 
 .product-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    height: 100%;
+    height: auto;
     justify-content: start;
+    margin: 40px auto 40px auto;
+    width: fit-content;
     background-color: aqua;
 }
 
 .product-card {
-    width: 200px;
-    height: 340px;
+    width: 220px;
+    height: 300px;
     border-radius: 1em;
     background-color: var(--white);
     overflow: hidden;
@@ -412,7 +416,7 @@ footer {
 
 .product-card > img {
     position: absolute;
-    height: 62%;
+    height: 200px;
     width: 100%;
     top: 0;
     object-fit: cover;
@@ -421,10 +425,10 @@ footer {
 .product-info {
     position: absolute;
     bottom: 0;
-    height: 30%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    padding: 0.8rem;
+    padding: 0.6rem;
 }
 
 .product-info > p {
