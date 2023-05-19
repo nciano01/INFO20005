@@ -407,7 +407,7 @@ footer {
 
 .product-card {
     width: 220px;
-    height: 300px;
+    height: 315px;
     border-radius: 1em;
     background-color: var(--white);
     overflow: hidden;
@@ -428,7 +428,7 @@ footer {
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 0.6rem;
+    padding: 0.8rem;
 }
 
 .product-info > p {
@@ -611,6 +611,8 @@ footer {
 
 .cart-order-summary {
     align-content: center;
+    position: sticky;
+    top: 1rem;
     grid-column: 4;
     grid-row: 2/5;
     width: 100%;
@@ -634,15 +636,15 @@ footer {
     margin-bottom: 1rem;
 }
 
-.order-descrip {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+.cart-descrip > h2 {
+    margin: 20px 20px 0 20px;
+}
+.cart-descrip > p {
+    margin: 0 20px 0 20px;
 }
 
-
-.order-descrip > h4 {
-    margin-bottom: 8px;
+.item-price {
+    margin: 20px 20px 0 20px;
 }
 
 .table-order-actions {
@@ -661,7 +663,7 @@ footer {
     background-color: var(--color-primary);
     border-width: 0px 0px 4px 4px;
     border-color: var(--color-secondary);
-    margin-bottom: 1rem;
+    margin: 0 1rem 1rem 1rem;
 }
 
 
