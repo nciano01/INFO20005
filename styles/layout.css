@@ -607,6 +607,8 @@ footer {
 
 .cart-order-summary {
     align-content: center;
+    position: sticky;
+    top: 1rem;
     grid-column: 4;
     grid-row: 2/5;
     width: 100%;
