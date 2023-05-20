@@ -737,6 +737,15 @@ footer {
     background-size: cover;
 }
 
+.cart-img {
+    width: 200px;
+    height: inherit;
+    background-image: url(https://placehold.co/200x300);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 @media screen and (max-width:1000px) {
     .cart-elements {
         display: block;
@@ -753,6 +762,10 @@ footer {
     .cart-order-summary {
         border-radius: 0;
         margin-bottom: 20px;
+    }
+
+    .cart-img {
+        width: 100px;
     }
 }
 
@@ -771,15 +784,6 @@ footer {
 
 .cart-table:nth-last-child(1) {
     border-radius: 0 0 1em 1em;
-}
-
-.cart-img {
-    width: 200px;
-    height: inherit;
-    background-image: url(https://placehold.co/200x300);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 
 .button--order {
