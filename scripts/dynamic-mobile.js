@@ -98,6 +98,8 @@ document.getElementsByClassName("backdrop-image")[0].onclick = function takeaway
         document.getElementsByClassName("dinein")[0].style.gridColumn = "2";
         document.getElementsByClassName("dinein")[0].style.gridRow = "6";
         document.getElementsByClassName("dinein")[0].style.margin = "auto";
+        /* reset dine-in description line height */
+        document.getElementsByClassName("dinein")[0].style.lineHeight = "normal";
         /* show takeaway description and change colour to black */
         document.getElementsByClassName("option-description")[0].style.display = "block";
         document.getElementsByClassName("option-description")[1].style.display = "block";
