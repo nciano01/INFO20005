@@ -9,8 +9,12 @@ var mainClicked = 0;
 var sidesClicked = 0;
 var dessertClicked = 0;
 
+const clickedMezze = document.getElementsByClassName("mezze-button")[0];
+const clickedMain = document.getElementsByClassName("main-button")[0];
+const clickedSides = document.getElementsByClassName("sides-button")[0];
+const clickedDessert = document.getElementsByClassName("dessert-button")[0];
+
 function mezzeProducts() {
-    const clickedMezze = document.getElementsByClassName("mezze-button")[0];
     if (mezzeClicked == 0) {
         document.getElementById('mezze').style.display = 'block';
         document.getElementById('popular').style.display = 'none';
@@ -74,7 +78,6 @@ function mezzeProducts() {
 }
 
 function mainCourseProducts() {
-    const clickedMain = document.getElementsByClassName("main-button")[0];
     if (mainClicked == 0) {
         document.getElementById('main-course').style.display = 'block';
         document.getElementById('popular').style.display = 'none';
@@ -139,7 +142,6 @@ function mainCourseProducts() {
 }
 
 function sidesProducts() {
-    const clickedSides = document.getElementsByClassName("sides-button")[0];
     if (sidesClicked == 0) {
         document.getElementById('sides').style.display = 'block';
         document.getElementById('popular').style.display = 'none';
@@ -203,7 +205,6 @@ function sidesProducts() {
 }
 
 function dessertProducts() {
-    const clickedDessert = document.getElementsByClassName("dessert-button")[0];
     if (dessertClicked == 0) {
         document.getElementById('dessert').style.display = 'block';
         document.getElementById('popular').style.display = 'none';
