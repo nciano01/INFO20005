@@ -4,6 +4,8 @@ window.addEventListener("resize", addClick);
 window.addEventListener("resize", reset);
 
 var clickedState = 0;
+var takeawayClicked = 0;
+var dineInClicked = 0;
 
 function addClick() {
     if (window.innerWidth <= 1000) {
@@ -17,9 +19,11 @@ function addClick() {
 document.getElementsByClassName("backdrop-image--takeaway")[0].onclick = function takeawayExpand() {
     if (window.innerWidth <= 1000 && clickedState == 0) {
         /* make background image fill */
-        document.getElementsByClassName("backdrop-image")[0].style.display = "none";
-        document.getElementsByClassName("backdrop-image--takeaway")[0].style.width = "100%"
+        document.getElementsByClassName("backdrop-image--takeaway")[0].style.animationName = "toFullWidth";
+        document.getElementsByClassName("backdrop-image--takeaway")[0].style.animationDuration = "1s";
+        document.getElementsByClassName("backdrop-image--takeaway")[0].style.width = "100%";
         document.getElementsByClassName("backdrop-image--takeaway")[0].style.filter = "brightness(100%)";
+        document.getElementsByClassName("backdrop-image")[0].style.zIndex = "-1";
         /* hide right arrow */
         document.getElementsByClassName("arrow--right")[0].style.display = "none";
         /* hide dine in and take away options */
@@ -61,13 +65,16 @@ document.getElementsByClassName("backdrop-image--takeaway")[0].onclick = functio
         document.getElementsByClassName("homegrid")[0].appendChild(mobileBackdrop);
         /* change clickedState to true */
         clickedState = 1;
+        takeawayClicked = 1;
     }
 }
 
 document.getElementsByClassName("backdrop-image")[0].onclick = function takeawayExpand() {
     if (window.innerWidth <= 1000 && clickedState == 0) {
         /* make background image fill */
-        document.getElementsByClassName("backdrop-image--takeaway")[0].style.display = "none";
+        document.getElementsByClassName("backdrop-image--takeaway")[0].style.zIndex = "-1";
+        document.getElementsByClassName("backdrop-image")[0].style.animationName = "toFullWidth";
+        document.getElementsByClassName("backdrop-image")[0].style.animationDuration = "1s";
         document.getElementsByClassName("backdrop-image")[0].style.width = "100%"
         document.getElementsByClassName("backdrop-image")[0].style.filter = "brightness(100%)";
         /* hide right arrow */
@@ -111,6 +118,7 @@ document.getElementsByClassName("backdrop-image")[0].onclick = function takeaway
         document.getElementsByClassName("homegrid")[0].appendChild(mobileBackdrop);
         /* change clickedState to true */
         clickedState = 1;
+        dineInClicked = 1;
     }
 }
 
@@ -141,12 +149,30 @@ function reset() {
         document.getElementsByClassName("content")[0].style.pointerEvents = "none";
         /* reset clickedState back to false */
         clickedState = 0;
+        takeawayClicked = 0;
+        dineInClicked = 0;
     }
 }
 
 document.getElementsByClassName("arrow--left")[0].onclick = function resetOnClick() {
     if (clickedState == 1) {
-        /* remove injected CSS */
+        /* animates the image depending on which option is active */
+        if (takeawayClicked == 1) {
+            document.getElementsByClassName("backdrop-image--takeaway")[0].style.animationName = "toHalfWidth";
+            document.getElementsByClassName("backdrop-image--takeaway")[0].style.animationDuration = "1s";
+            document.getElementsByClassName("backdrop-image--takeaway")[0].style.width = "50%";
+            document.getElementsByClassName("backdrop-image--takeaway")[0].style.filter = "brightness(50%)";
+            takeawayClicked = 0;
+        }
+        else {
+            document.getElementsByClassName("backdrop-image")[0].style.animationName = "toHalfWidth";
+            document.getElementsByClassName("backdrop-image")[0].style.animationDuration = "1s";
+            document.getElementsByClassName("backdrop-image")[0].style.width = "50%";
+            document.getElementsByClassName("backdrop-image")[0].style.filter = "brightness(50%)";
+            dineInClicked = 0;
+        }
+        /* remove injected CSS, after delay for animation to occur */
+        setTimeout(function() {
         document.getElementsByClassName("backdrop-image--takeaway")[0].removeAttribute("style");
         document.getElementsByClassName("backdrop-image")[0].removeAttribute("style");
         document.getElementsByClassName("arrow--right")[0].removeAttribute("style");
@@ -179,5 +205,6 @@ document.getElementsByClassName("arrow--left")[0].onclick = function resetOnClic
         document.getElementsByClassName("backdrop-image")[0].style.height = gridHeight + "px";
         document.getElementsByClassName("backdrop-image")[1].style.height = gridHeight + "px";
         document.getElementsByTagName("footer")[0].style.transform = "translateY(" + gridHeightClip + "px)";
+        }, 1000);
     }
 }

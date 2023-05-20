@@ -14,6 +14,30 @@ body {
     text-align: right;
 }
 
+/* Animation */
+
+@keyframes toFullWidth {
+    from{
+        width: 50%;
+        filter: brightness(50%);
+    }
+    to{
+        width: 100%;
+        filter: brightness(100%);
+    }
+}
+
+@keyframes toHalfWidth {
+    from{
+        width: 100%;
+        filter: brightness(100%);
+    }
+    to{
+        width: 50%;
+        filter: brightness(50%);
+    }
+}
+
 /* Home layout */
 
 .button {
