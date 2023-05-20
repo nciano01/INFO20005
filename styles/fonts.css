@@ -3,7 +3,13 @@
 @font-face {
     font-family: TTNooksBold;
     src: url(/fonts/TT\ Nooks\ Bold.otf);
-  }  
+  } 
+  
+  
+@font-face {
+  font-family: TTNooksScriptBold;
+  src: url(/fonts/TT\ Nooks\ Script\ Bold.otf);
+} 
 
 @font-face {
     font-family: Mentone;
