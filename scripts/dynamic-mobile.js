@@ -33,6 +33,7 @@ document.getElementsByClassName("backdrop-image--takeaway")[0].onclick = functio
         /* allow for clicking again */
         document.getElementsByClassName("content")[0].style.pointerEvents = "auto";
         /* move left arrow to top, repurpose as back button */
+        document.getElementsByClassName("arrow--left")[0].style.position = "absolute";
         document.getElementsByClassName("arrow--left")[0].style.gridRow = "2";
         document.getElementsByClassName("arrow--left")[0].style.gridColumn = "1";
         document.getElementsByClassName("arrow--left")[0].style.marginLeft = "10px";
@@ -82,6 +83,7 @@ document.getElementsByClassName("backdrop-image")[0].onclick = function takeaway
         /* allow for clicking again */
         document.getElementsByClassName("content")[0].style.pointerEvents = "auto";
         /* move left arrow to top, repurpose as back button */
+        document.getElementsByClassName("arrow--left")[0].style.position = "absolute";
         document.getElementsByClassName("arrow--left")[0].style.gridRow = "2";
         document.getElementsByClassName("arrow--left")[0].style.gridColumn = "1";
         document.getElementsByClassName("arrow--left")[0].style.marginLeft = "10px";
