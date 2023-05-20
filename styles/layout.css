@@ -82,7 +82,7 @@ body {
 
 .mobile-option-title {
     grid-row: 4/6;
-    grid-column: 4;
+    grid-column: 2;
     z-index: 3;
     align-self: center;
     margin-top: auto;
@@ -99,7 +99,7 @@ body {
     height: 100%;
     grid-row: 5/7;
     padding-bottom: 100px;
-    grid-column: 4;
+    grid-column: 2;
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.35);
     border-radius: 4rem;
