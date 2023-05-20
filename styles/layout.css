@@ -127,7 +127,6 @@ body {
     .arrow--right {
         grid-row: 2/4;
         grid-column: 4;
-
     }
 
     .dinein {
@@ -173,6 +172,15 @@ body {
         font-size: 1.5rem;
         height: 48px;
         width: 150px;
+    }
+
+    .mobile-option-title {
+        font-size: 2.5rem;
+    }
+
+    .arrow {
+        width: 2rem;
+        height: 2rem;
     }
 }
 
