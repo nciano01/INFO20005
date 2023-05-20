@@ -44,6 +44,12 @@ function mezzeProducts() {
 
         clickedMezze.style.backgroundColor = "var(--color-secondary)";
         clickedMezze.style.borderColor = "var(--white)";
+        clickedMain.style.backgroundColor = "var(--white)";
+        clickedMain.style.borderColor = "var(--color-secondary)";
+        clickedSides.style.backgroundColor = "var(--white)";
+        clickedSides.style.borderColor = "var(--color-secondary)";
+        clickedDessert.style.backgroundColor = "var(--white)";
+        clickedDessert.style.borderColor = "var(--color-secondary)";
     }
     else {
         document.getElementById('mezze').style.display = 'none';
@@ -107,6 +113,12 @@ function mainCourseProducts() {
 
         clickedMain.style.backgroundColor = "var(--color-secondary)";
         clickedMain.style.borderColor = "var(--white)";
+        clickedMezze.style.backgroundColor = "var(--white)";
+        clickedMezze.style.borderColor = "var(--color-secondary)";
+        clickedSides.style.backgroundColor = "var(--white)";
+        clickedSides.style.borderColor = "var(--color-secondary)";
+        clickedDessert.style.backgroundColor = "var(--white)";
+        clickedDessert.style.borderColor = "var(--color-secondary)";
     }
     else {
         document.getElementById('mezze').style.display = 'none';
@@ -171,6 +183,12 @@ function sidesProducts() {
 
         clickedSides.style.backgroundColor = "var(--color-secondary)";
         clickedSides.style.borderColor = "var(--white)";
+        clickedMezze.style.backgroundColor = "var(--white)";
+        clickedMezze.style.borderColor = "var(--color-secondary)";
+        clickedMain.style.backgroundColor = "var(--white)";
+        clickedMain.style.borderColor = "var(--color-secondary)";
+        clickedDessert.style.backgroundColor = "var(--white)";
+        clickedDessert.style.borderColor = "var(--color-secondary)";
     }
     else {
         document.getElementById('mezze').style.display = 'none';
@@ -234,6 +252,12 @@ function dessertProducts() {
 
         clickedDessert.style.backgroundColor = "var(--color-secondary)";
         clickedDessert.style.borderColor = "var(--white)";
+        clickedMezze.style.backgroundColor = "var(--white)";
+        clickedMezze.style.borderColor = "var(--color-secondary)";
+        clickedSides.style.backgroundColor = "var(--white)";
+        clickedSides.style.borderColor = "var(--color-secondary)";
+        clickedMain.style.backgroundColor = "var(--white)";
+        clickedMain.style.borderColor = "var(--color-secondary)";
     }
     else {
         document.getElementById('mezze').style.display = 'none';
