@@ -8,7 +8,9 @@ var takeawayClicked = 0;
 var dineInClicked = 0;
 
 function addClick() {
+    /* checks window width to see what style homepage is displayed */
     if (window.innerWidth <= 1000) {
+        /* if mobile homepage is shown, allow for the images to be clicked */
         document.getElementsByClassName("content")[0].style.pointerEvents = "none";
     }
     else {
@@ -173,7 +175,7 @@ document.getElementsByClassName("arrow--left")[0].onclick = function resetOnClic
             document.getElementsByClassName("backdrop-image")[0].style.filter = "brightness(50%)";
             dineInClicked = 0;
         }
-        /* remove injected CSS, after delay for animation to occur */
+        /* remove injected CSS, after 1s delay for animation to occur */
         setTimeout(function() {
         document.getElementsByClassName("backdrop-image--takeaway")[0].removeAttribute("style");
         document.getElementsByClassName("backdrop-image")[0].removeAttribute("style");
