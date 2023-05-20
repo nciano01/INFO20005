@@ -28,8 +28,8 @@ document.getElementsByClassName("backdrop-image--takeaway")[0].onclick = functio
         /* hide logo */
         document.getElementsByClassName("hero-logo")[0].style.display = "none";
         /* change grid format */
-        document.getElementsByClassName("homegrid")[0].style.gridTemplateColumns = "0.5fr 0.5fr 1fr 4fr 1fr 0.5fr 0.5fr"
-        document.getElementsByClassName("homegrid")[0].style.gridTemplateRows = "0.5fr 1fr 3fr 0.5fr 0.5fr 10fr 4fr 1fr 0.5fr"
+        document.getElementsByClassName("homegrid")[0].style.gridTemplateColumns = "0.5fr 10fr 0.5fr";
+        document.getElementsByClassName("homegrid")[0].style.gridTemplateRows = "0.5fr 1fr 3fr 0.5fr 0.5fr 10fr 4fr 1fr 0.5fr";
         /* allow for clicking again */
         document.getElementsByClassName("content")[0].style.pointerEvents = "auto";
         /* move left arrow to top, repurpose as back button */
@@ -37,7 +37,7 @@ document.getElementsByClassName("backdrop-image--takeaway")[0].onclick = functio
         document.getElementsByClassName("arrow--left")[0].style.gridColumn = "1";
         document.getElementsByClassName("arrow--left")[0].style.marginLeft = "10px";
         /* move takeaway description to middle of grid */
-        document.getElementsByClassName("takeaway")[0].style.gridColumn = "4";
+        document.getElementsByClassName("takeaway")[0].style.gridColumn = "2";
         document.getElementsByClassName("takeaway")[0].style.gridRow = "6";
         document.getElementsByClassName("takeaway")[0].style.margin = "auto";
         /* show takeaway description and change colour to black */
@@ -47,7 +47,7 @@ document.getElementsByClassName("backdrop-image--takeaway")[0].onclick = functio
         document.getElementsByClassName("option-description")[3].style.color = "var(--black)";
         /* reshow order button */
         document.getElementsByClassName("button--takeaway")[0].style.display = "block";
-        document.getElementsByClassName("button--takeaway")[0].style.gridColumn = "4";
+        document.getElementsByClassName("button--takeaway")[0].style.gridColumn = "2";
         document.getElementsByClassName("button--takeaway")[0].style.gridRow = "7";
         /* add option header */
         let mobileOptionTitle = document.createElement("h2");
@@ -77,8 +77,8 @@ document.getElementsByClassName("backdrop-image")[0].onclick = function takeaway
         /* hide logo */
         document.getElementsByClassName("hero-logo")[0].style.display = "none";
         /* change grid format */
-        document.getElementsByClassName("homegrid")[0].style.gridTemplateColumns = "0.5fr 0.5fr 1fr 4fr 1fr 0.5fr 0.5fr"
-        document.getElementsByClassName("homegrid")[0].style.gridTemplateRows = "0.5fr 1fr 3fr 0.5fr 0.5fr 10fr 4fr 1fr 0.5fr"
+        document.getElementsByClassName("homegrid")[0].style.gridTemplateColumns = "0.5fr 10fr 0.5fr";
+        document.getElementsByClassName("homegrid")[0].style.gridTemplateRows = "0.5fr 1fr 3fr 0.5fr 0.5fr 10fr 4fr 1fr 0.5fr";
         /* allow for clicking again */
         document.getElementsByClassName("content")[0].style.pointerEvents = "auto";
         /* move left arrow to top, repurpose as back button */
@@ -86,7 +86,7 @@ document.getElementsByClassName("backdrop-image")[0].onclick = function takeaway
         document.getElementsByClassName("arrow--left")[0].style.gridColumn = "1";
         document.getElementsByClassName("arrow--left")[0].style.marginLeft = "10px";
         /* move dine-in description to middle of grid */
-        document.getElementsByClassName("dinein")[0].style.gridColumn = "4";
+        document.getElementsByClassName("dinein")[0].style.gridColumn = "2";
         document.getElementsByClassName("dinein")[0].style.gridRow = "6";
         document.getElementsByClassName("dinein")[0].style.margin = "auto";
         /* show takeaway description and change colour to black */
@@ -96,7 +96,7 @@ document.getElementsByClassName("backdrop-image")[0].onclick = function takeaway
         document.getElementsByClassName("option-description")[1].style.color = "var(--black)";
         /* reshow order button */
         document.getElementsByClassName("button--dinein")[0].style.display = "block";
-        document.getElementsByClassName("button--dinein")[0].style.gridColumn = "4";
+        document.getElementsByClassName("button--dinein")[0].style.gridColumn = "2";
         document.getElementsByClassName("button--dinein")[0].style.gridRow = "7";
         /* add option header */
         let mobileOptionTitle = document.createElement("h2");
@@ -114,7 +114,7 @@ document.getElementsByClassName("backdrop-image")[0].onclick = function takeaway
 
 
 function reset() {
-    if (window.innerWidth > 1000) {
+    if (window.innerWidth > 1000 && clickedState == 1) {
         /* remove injected CSS */
         document.getElementsByClassName("backdrop-image--takeaway")[0].removeAttribute("style");
         document.getElementsByClassName("backdrop-image")[0].removeAttribute("style");
@@ -136,6 +136,8 @@ function reset() {
         /* delete injected HTML */
         document.getElementsByClassName("mobile-option-title")[0].remove();
         document.getElementsByClassName("mobile-backdrop")[0].remove();
+        /* reset clickedState back to false */
+        clickedState = 0;
     }
 }
 
