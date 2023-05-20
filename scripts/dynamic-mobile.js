@@ -125,7 +125,6 @@ function reset() {
         document.getElementsByClassName("option")[1].removeAttribute("style");
         document.getElementsByClassName("hero-logo")[0].removeAttribute("style");
         document.getElementsByClassName("homegrid")[0].removeAttribute("style");
-        document.getElementsByClassName("content")[0].removeAttribute("style");
         document.getElementsByClassName("arrow--left")[0].removeAttribute("style");
         document.getElementsByClassName("takeaway")[0].removeAttribute("style");
         document.getElementsByClassName("dinein")[0].removeAttribute("style");
@@ -138,6 +137,8 @@ function reset() {
         /* delete injected HTML */
         document.getElementsByClassName("mobile-option-title")[0].remove();
         document.getElementsByClassName("mobile-backdrop")[0].remove();
+        /* allow for image to be clicked again */
+        document.getElementsByClassName("content")[0].style.pointerEvents = "none";
         /* reset clickedState back to false */
         clickedState = 0;
     }
@@ -153,7 +154,6 @@ document.getElementsByClassName("arrow--left")[0].onclick = function resetOnClic
         document.getElementsByClassName("option")[1].removeAttribute("style");
         document.getElementsByClassName("hero-logo")[0].removeAttribute("style");
         document.getElementsByClassName("homegrid")[0].removeAttribute("style");
-        document.getElementsByClassName("content")[0].removeAttribute("style");
         document.getElementsByClassName("arrow--left")[0].removeAttribute("style");
         document.getElementsByClassName("takeaway")[0].removeAttribute("style");
         document.getElementsByClassName("dinein")[0].removeAttribute("style");
@@ -166,6 +166,8 @@ document.getElementsByClassName("arrow--left")[0].onclick = function resetOnClic
         /* delete injected HTML */
         document.getElementsByClassName("mobile-option-title")[0].remove();
         document.getElementsByClassName("mobile-backdrop")[0].remove();
+        /* allow for image to be clicked again */
+        document.getElementsByClassName("content")[0].style.pointerEvents = "none";
         /* reset clickedState back to false */
         clickedState = 0;
         /* run heightEquivalence function */
