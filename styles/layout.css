@@ -542,6 +542,19 @@ footer {
     object-fit: cover;
 }
 
+.img-cont {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+.img-cont > img {
+    object-fit: cover;
+    width: 100%;
+}
+
 .product-info {
     position: absolute;
     bottom: 0;
