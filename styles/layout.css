@@ -888,3 +888,27 @@ footer {
 .cart-descrip > h4 {
     margin-bottom: 8px;
 }
+
+.order-summary {
+    grid-column: 4;
+    grid-row: 2/5;
+    width: 100%;
+    height: fit-content;
+}
+
+.summary-box {
+    align-content: center;
+    position: sticky;
+    top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1em 1em 1em 1em;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+@media screen and (max-width:1000px) {
+    .summary-box {
+        border-radius: 0;
+        margin-bottom: 20px;
+    }
+}
