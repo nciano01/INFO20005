@@ -569,7 +569,7 @@ footer {
 .product-categories > button {
     height: 40px;
     width: 160px;
-    border-width: 0px 0px 2px 2px;
+    border-width: 0px 2px 2px 0px;
     background-color: var(--white);
     border-color: var(--color-secondary);
     border-radius: 8px;
