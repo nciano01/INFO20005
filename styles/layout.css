@@ -48,7 +48,7 @@ body {
     width: 200px;
     color: var(--color-secondary);
     background-color: var(--color-primary);
-    border-width: 0px 0px 2px 2px;
+    border-width: 0px 2px 2px 0px;
     border-color: var(--color-secondary);
     z-index: 3;
 }
