@@ -50,6 +50,8 @@ function mezzeProducts() {
         clickedSides.style.borderColor = "var(--color-secondary)";
         clickedDessert.style.backgroundColor = "var(--white)";
         clickedDessert.style.borderColor = "var(--color-secondary)";
+
+        document.getElementsByClassName('product-list').style.justifyContent = 'start';
     }
     else {
         document.getElementById('mezze').style.display = 'none';
