@@ -97,3 +97,9 @@ h4 {
   padding-top: auto;
   padding-bottom: auto;
 }
+
+.button {
+  padding-bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
