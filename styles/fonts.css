@@ -94,5 +94,6 @@ h4 {
 
 .category-heading > h2 {
   margin-left: 30px;
-  padding-bottom: 0px;
+  padding-top: auto;
+  padding-bottom: auto;
 }
