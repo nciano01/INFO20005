@@ -94,8 +94,7 @@ h4 {
 
 .category-heading > h2 {
   margin-left: 30px;
-  padding-top: auto;
-  padding-bottom: auto;
+  padding-bottom: 0px;
 }
 
 .button {
