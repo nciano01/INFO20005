@@ -43,6 +43,9 @@ document.getElementsByClassName("backdrop-image--takeaway")[0].onclick = functio
         document.getElementsByClassName("arrow--left")[0].style.gridRow = "2";
         document.getElementsByClassName("arrow--left")[0].style.gridColumn = "1";
         document.getElementsByClassName("arrow--left")[0].style.marginLeft = "10px";
+        document.getElementsByClassName("arrow--left")[0].style.marginTop = "10px";
+        document.getElementsByClassName("arrow--left")[0].style.width = "10vw";
+        document.getElementsByClassName("arrow--left")[0].style.height = "10vw";
         /* move takeaway description to middle of grid */
         document.getElementsByClassName("takeaway")[0].style.gridColumn = "2";
         document.getElementsByClassName("takeaway")[0].style.gridRow = "6";
@@ -96,6 +99,9 @@ document.getElementsByClassName("backdrop-image")[0].onclick = function takeaway
         document.getElementsByClassName("arrow--left")[0].style.gridRow = "2";
         document.getElementsByClassName("arrow--left")[0].style.gridColumn = "1";
         document.getElementsByClassName("arrow--left")[0].style.marginLeft = "10px";
+        document.getElementsByClassName("arrow--left")[0].style.marginTop = "10px";
+        document.getElementsByClassName("arrow--left")[0].style.width = "10vw";
+        document.getElementsByClassName("arrow--left")[0].style.height = "10vw";
         /* move dine-in description to middle of grid */
         document.getElementsByClassName("dinein")[0].style.gridColumn = "2";
         document.getElementsByClassName("dinein")[0].style.gridRow = "6";
