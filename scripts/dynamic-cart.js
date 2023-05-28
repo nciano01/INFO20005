@@ -1,4 +1,30 @@
 window.addEventListener("load", priceCalc);
+window.addEventListener("load", cartHeightEquivalence);
+window.addEventListener("resize", cartHeightEquivalence);
+
+function cartHeightEquivalence() {
+    /* reset heights */
+    var cartItemCount = document.getElementsByClassName('cart-table');
+    var descripItemCount = document.getElementsByClassName('cart-descrip');
+    for (var i=0; i<cartItemCount.length; i++) {
+        cartItemCount[i].removeAttribute("style");
+        descripItemCount[i].removeAttribute("style");
+    }
+    console.log(cartItemCount);
+    var maxHeight = 0;
+    for (var i=0; i<cartItemCount.length; i++) {
+        if (maxHeight < cartItemCount[i].scrollHeight ) {
+            maxHeight = cartItemCount[i].scrollHeight;
+        }
+    }
+    for (var i=0; i<cartItemCount.length; i++) {
+        cartItemCount[i].style.height = maxHeight + "px";
+    }
+
+    for (var i=0; i<descripItemCount.length; i++) {
+        descripItemCount[i].style.height = maxHeight + "px";
+    }
+}
 
 function priceCalc() {
     var allPrices = document.getElementsByClassName('item-price');
@@ -44,7 +70,9 @@ function itemRemoval() {
     item.remove();
     /* re-calculates price */
     priceCalc();
-    /* re-directs to menu */
+    /* re-calculates cart height */
+    cartHeightEquivalence();
+    /* re-directs to menu if no items are left */
     if (deleteButtons.length == 0) {
         window.location.href = "/product.html"
     }
