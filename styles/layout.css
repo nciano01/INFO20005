@@ -734,10 +734,6 @@ footer {
     .cart-img {
         width: 30vw;
     }
-
-    .in-box-title {
-        font-size: 4vw;
-    }
 }
 
 /* formatting of cart based on the amount of items */
@@ -887,5 +883,19 @@ footer {
     .summary-box {
         border-radius: 0;
         margin-bottom: 20px;
+    }
+
+    .in-box-title {
+        font-size: 4vw;
+    }
+
+    .button--action {
+        width: 8vw;
+        height: 8vw;
+    }
+    
+    .square-button-image {
+        width: 4vw;
+        height: 4vw;
     }
 }
