@@ -50,8 +50,6 @@ function mezzeProducts() {
         clickedSides.style.borderColor = "var(--color-secondary)";
         clickedDessert.style.backgroundColor = "var(--white)";
         clickedDessert.style.borderColor = "var(--color-secondary)";
-
-        document.getElementsByClassName('product-list').style.justifyContent = 'start';
     }
     else {
         document.getElementById('mezze').style.display = 'none';
@@ -99,6 +97,7 @@ function mainCourseProducts() {
         var mainElems = document.getElementsByClassName('main');
             for (var i=0; i<mainElems.length; i++) {
                 mainElems[i].style.display = 'block';
+                main
             }
         var mainElems = document.getElementsByClassName('sides');
             for (var i=0; i<mainElems.length; i++) {
@@ -121,6 +120,14 @@ function mainCourseProducts() {
         clickedSides.style.borderColor = "var(--color-secondary)";
         clickedDessert.style.backgroundColor = "var(--white)";
         clickedDessert.style.borderColor = "var(--color-secondary)";
+
+        /* tried to append the elements to new container but it didn't do anything */
+        const originalCont = document.getElementsByClassName("product-list")[0];
+        const contChild = originalCont.childNodes;
+        const newCont = document.createElement("div");
+        for (var i=0; i < contChild.length; i++) {
+            newCont.appendChild(contChild[i].cloneNode(true));
+        }
     }
     else {
         document.getElementById('mezze').style.display = 'none';
