@@ -602,6 +602,7 @@ footer {
 }
 
 .img-holder > img {
+    width: 260px;
     object-fit: cover;
 }
 
