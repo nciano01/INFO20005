@@ -141,6 +141,8 @@ body {
     
     .arrow {
         display: block;
+        width: 6vw;
+        height: 6vw;
     }
 
     .arrow--left {
@@ -184,82 +186,20 @@ body {
         font-size: 4vw;
     }
 
-    .hero-logo {
-        width: 50%;
-    }
-
     p {
         font-size: 3vw;
     }
 
     .button {
-        font-size: 1.5rem;
-        height: 48px;
-        width: 150px;
+        font-size: 4vw;
+        height: 10vw;
+        width: 25vw;
     }
 
     .mobile-option-title {
         font-size: 10vw;
     }
-
-    .arrow {
-        width: 6vw;
-        height: 6vw;
-    }
 }
-
-@media screen and (max-height:1000px){
-    .option {
-        font-size: 1.5rem;
-    }
-
-    .hero-logo {
-        width: 300px;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .button {
-        font-size: 1.5rem;
-        height: 48px;
-        width: 150px;
-    }
-
-    .mobile-option-title {
-        font-size: 2.5rem;
-    }
-}
-
-/*@media screen and (max-width:600px){
-    .option {
-        font-size: 1rem;
-    }
-
-    .hero-logo {
-        width: 50%;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .button {
-        font-size: 1.5rem;
-        height: 48px;
-        width: 150px;
-    }
-
-    .mobile-option-title {
-        font-size: 2.5rem;
-    }
-
-    .arrow {
-        width: 2rem;
-        height: 2rem;
-    }
-}*/
 
 /* Button layout */
 
