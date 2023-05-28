@@ -738,8 +738,9 @@ footer {
 
 /* formatting of cart based on the amount of items */
 
-.cart-table:nth-child(1) {        
-    border-radius: 1em 1em 0 0;
+.cart-table:first-child {        
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
 .cart-table:nth-child(n + 2) {
@@ -749,8 +750,9 @@ footer {
 }
 
 
-.cart-table:nth-last-child(1) {
-    border-radius: 0 0 1em 1em;
+.cart-table:last-child {
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 .button--order {

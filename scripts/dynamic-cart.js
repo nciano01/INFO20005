@@ -27,3 +27,25 @@ function priceCalc() {
     textPrice = (Math.round(totalPrice * 100) / 100).toFixed(2);
     document.getElementsByClassName('total')[0].innerHTML = "$" + textPrice;
 }
+
+deleteButtons = document.getElementsByClassName('button-delete');
+
+for (var i=0; i<deleteButtons.length; i++) {
+    deleteButtons[i].addEventListener("click", itemRemoval);
+}
+
+function itemRemoval() {
+    /* moves up from the hierarchy, staring from the button that was clicked */
+    var buttons = event.currentTarget.parentNode.parentNode;
+    var row = buttons.parentNode.parentNode;
+    var info = row.parentNode;
+    var item = info.parentNode;
+    /* deletes the item */
+    item.remove();
+    /* re-calculates price */
+    priceCalc();
+    /* adds empty cart item */
+    if (deleteButtons.length == 0) {
+        alert("No items add the HTML");
+    }
+}
