@@ -14,6 +14,10 @@ body {
     text-align: right;
 }
 
+.bottom {
+    vertical-align: bottom;
+}
+
 /* Animation */
 
 @keyframes toFullWidth {
@@ -865,6 +869,15 @@ footer {
     color: var(--white);
     text-transform: uppercase;
     margin-left: 10px;
+}
+
+div > .suggestion-contents {
+    padding-bottom: 0;
+}
+
+td > .suggestion-contents {
+    vertical-align: bottom;
+    padding-bottom: auto;
 }
 
 .cart-descrip {
