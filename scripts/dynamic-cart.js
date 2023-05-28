@@ -44,7 +44,7 @@ function itemRemoval() {
     item.remove();
     /* re-calculates price */
     priceCalc();
-    /* adds empty cart item */
+    /* re-directs to menu */
     if (deleteButtons.length == 0) {
         window.location.href = "/product.html"
     }
