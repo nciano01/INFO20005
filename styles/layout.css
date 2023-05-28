@@ -173,10 +173,38 @@ body {
         grid-column: 2/4;
         align-self: center;
         padding-bottom: 100px;
+        width: 60%;
     }
 
     .grid-end {
         display: none;
+    }
+ /**/
+    .option {
+        font-size: 4vw;
+    }
+
+    .hero-logo {
+        width: 50%;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    .button {
+        font-size: 1.5rem;
+        height: 48px;
+        width: 150px;
+    }
+
+    .mobile-option-title {
+        font-size: 10vw;
+    }
+
+    .arrow {
+        width: 6vw;
+        height: 6vw;
     }
 }
 
@@ -204,7 +232,7 @@ body {
     }
 }
 
-@media screen and (max-width:600px){
+/*@media screen and (max-width:600px){
     .option {
         font-size: 1rem;
     }
@@ -231,7 +259,7 @@ body {
         width: 2rem;
         height: 2rem;
     }
-}
+}*/
 
 /* Button layout */
 
