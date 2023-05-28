@@ -663,6 +663,7 @@ footer {
 .cart-title {
     grid-row: 1;
     grid-column: 2;
+    color: var(--white);
 }
 
 .cart-items {
@@ -926,5 +927,10 @@ td > .suggestion-contents {
     .square-button-image {
         width: 3vw;
         height: 3vw;
+    }
+
+    .cart-title {
+        padding-left: 20px;
+        font-size: 9vw;
     }
 }
