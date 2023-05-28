@@ -46,6 +46,6 @@ function itemRemoval() {
     priceCalc();
     /* adds empty cart item */
     if (deleteButtons.length == 0) {
-        alert("No items add the HTML");
+        window.location.href = "/product.html"
     }
 }
