@@ -724,6 +724,11 @@ footer {
     background-size: cover;
 }
 
+.quantity--cart {
+    width: 100px;
+    margin-left: 20px;
+}
+
 /* cart product images */
 
 .img-selection--souvlaki {
