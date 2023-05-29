@@ -765,10 +765,6 @@ footer {
     .cart-img {
         width: 30vw;
     }
-
-    .quantity--cart {
-        width: 10vw;
-    }
 }
 
 /* formatting of cart based on the amount of items */

@@ -81,7 +81,7 @@ function itemRemoval() {
 
 addButtons = document.getElementsByClassName('button-add');
 
-for (var i=0; i<deleteButtons.length; i++) {
+for (var i=0; i<addButtons.length; i++) {
     addButtons[i].addEventListener("click", itemAddition);
 }
 
@@ -103,5 +103,53 @@ function itemAddition() {
     deleteButtons = document.getElementsByClassName('button-delete');
     for (var i=0; i<deleteButtons.length; i++) {
         deleteButtons[i].addEventListener("click", itemRemoval);
+    }
+}
+
+quantityAdditionButtons = document.getElementsByClassName('addition');
+
+for (var i=0; i<quantityAdditionButtons.length; i++) {
+    quantityAdditionButtons[i].addEventListener("click", quantityAdd);
+}
+
+function quantityAdd() {
+    quantityHTML = event.currentTarget.parentNode;
+    var currQuantity = quantityHTML.getElementsByTagName('p')[0].innerHTML * 1;
+    currQuantity += 1;
+    quantityHTML.getElementsByTagName('p')[0].innerHTML = currQuantity;
+}
+
+quantitySubtractionButtons = document.getElementsByClassName('subtraction');
+
+for (var i=0; i<quantitySubtractionButtons.length; i++) {
+    quantitySubtractionButtons[i].addEventListener("click", quantitySubtract);
+}
+
+function quantitySubtract() {
+    quantityHTML = event.currentTarget.parentNode;
+    var currQuantity = quantityHTML.getElementsByTagName('p')[0].innerHTML * 1;
+    currQuantity -= 1;
+    quantityHTML.getElementsByTagName('p')[0].innerHTML = currQuantity;
+    if (currQuantity == 0) {
+        itemRemovalQuantity();
+    }
+}
+
+function itemRemovalQuantity() {
+    /* moves up from the hierarchy, staring from the button that was clicked */
+    var button = event.currentTarget.parentNode.parentNode;
+    var buttons = button.parentNode;
+    var row = buttons.parentNode.parentNode;
+    var info = row.parentNode;
+    var item = info.parentNode;
+    /* deletes the item */
+    item.remove();
+    /* re-calculates price */
+    priceCalc();
+    /* re-calculates cart height */
+    cartHeightEquivalence();
+    /* re-directs to menu if no items are left */
+    if (deleteButtons.length == 0) {
+        window.location.href = "/product.html"
     }
 }
