@@ -1,3 +1,4 @@
+window.addEventListener("load", productListShrink);
 window.addEventListener("resize", productListShrink);
 
 function productListShrink() {

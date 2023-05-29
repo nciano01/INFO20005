@@ -725,8 +725,23 @@ footer {
     background-size: cover;
 }
 
-.img-selection--souvalaki {
+.quantity--cart {
+    width: 100px;
+    margin-left: 20px;
+}
+
+/* cart product images */
+
+.img-selection--souvlaki {
     background-image: url(/images/souvlaki.jpg);
+}
+
+.img-selection--salad {
+    background-image: url(/images/greek-salad.jpg);
+}
+
+.img-selection--olives {
+    background-image: url(/images/Olives.jpg);
 }
 
 @media screen and (max-width:1000px) {
@@ -740,6 +755,7 @@ footer {
 
     .cart-suggested-title {
         margin-left: 20px;
+        font-size: 4vw
     }
 
     .cart-order-summary {
@@ -840,6 +856,7 @@ footer {
 .cart-suggested-title {
     grid-column: 2;
     grid-row: 3;
+    padding-bottom: 0;
 }
 .element-order-summary {
     font-size: 1.5rem;
