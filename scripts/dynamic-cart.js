@@ -2,6 +2,7 @@ window.addEventListener("load", priceCalc);
 window.addEventListener("load", cartHeightEquivalence);
 window.addEventListener("resize", cartHeightEquivalence);
 
+/* ensures the cart items are the same height */
 function cartHeightEquivalence() {
     /* reset heights */
     var cartItemCount = document.getElementsByClassName('cart-table');
@@ -75,5 +76,30 @@ function itemRemoval() {
     /* re-directs to menu if no items are left */
     if (deleteButtons.length == 0) {
         window.location.href = "/product.html"
+    }
+}
+
+addButtons = document.getElementsByClassName('button-add');
+
+for (var i=0; i<deleteButtons.length; i++) {
+    addButtons[i].addEventListener("click", itemAddition);
+}
+
+function itemAddition() {
+    /* moves up from the hierarchy, staring from the button that was clicked */
+    var buttons = event.currentTarget.parentNode.parentNode;
+    var row = buttons.parentNode.parentNode;
+    var info = row.parentNode;
+    /* grabs element title and price */
+    var productInfo = info.getElementsByClassName('suggestion-contents');
+    /* adds to the table */
+    var table = document.getElementsByClassName('cart-items')[0];
+    table.innerHTML += '<div class="cart-table"> <div class="cart-img img-selection--' + event.currentTarget.id + '"></div> <div class="cart-descrip"><h2 class="in-box-title">' + productInfo[0].innerHTML + '</h2><table class="table-order-actions"><tr><td class="bottom"><h2 class="in-box-title item-price">' + productInfo[1].innerHTML + '</h2></td><td class="square-col"><button class="button--action"><img src="images/modify.png" class="square-button-image"></button></td><td class="square-col"><button class="button--action button-delete"><img src="images/bin.png" class="square-button-image"></button></td></tr></table></div></div>';
+    /* re-calculates cart height */
+    cartHeightEquivalence();
+    /* re-adds delete functionality to buttons */
+    deleteButtons = document.getElementsByClassName('button-delete');
+    for (var i=0; i<deleteButtons.length; i++) {
+        deleteButtons[i].addEventListener("click", itemRemoval);
     }
 }
