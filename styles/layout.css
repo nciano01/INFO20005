@@ -14,6 +14,10 @@ body {
     text-align: right;
 }
 
+.bottom {
+    vertical-align: bottom;
+}
+
 /* Animation */
 
 @keyframes toFullWidth {
@@ -141,6 +145,8 @@ body {
     
     .arrow {
         display: block;
+        width: 6vw;
+        height: 6vw;
     }
 
     .arrow--left {
@@ -173,63 +179,29 @@ body {
         grid-column: 2/4;
         align-self: center;
         padding-bottom: 100px;
+        width: 60%;
     }
 
     .grid-end {
         display: none;
     }
-}
-
-@media screen and (max-height:1000px){
+ /**/
     .option {
-        font-size: 1.5rem;
+        font-size: 4vw;
     }
 
-    .hero-logo {
-        width: 300px;
-    }
-
-    p {
-        font-size: 0.9rem;
+    .option-description {
+        font-size: 3vw;
     }
 
     .button {
-        font-size: 1.5rem;
-        height: 48px;
-        width: 150px;
+        font-size: 4vw;
+        height: 10vw;
+        width: 25vw;
     }
 
     .mobile-option-title {
-        font-size: 2.5rem;
-    }
-}
-
-@media screen and (max-width:600px){
-    .option {
-        font-size: 1rem;
-    }
-
-    .hero-logo {
-        width: 50%;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .button {
-        font-size: 1.5rem;
-        height: 48px;
-        width: 150px;
-    }
-
-    .mobile-option-title {
-        font-size: 2.5rem;
-    }
-
-    .arrow {
-        width: 2rem;
-        height: 2rem;
+        font-size: 10vw;
     }
 }
 
@@ -692,6 +664,7 @@ footer {
 .cart-title {
     grid-row: 1;
     grid-column: 2;
+    color: var(--white);
 }
 
 .cart-items {
@@ -732,18 +705,28 @@ footer {
     flex-direction: row;
     align-items: flex-end;
     background-position: center center;
-    background-repeat: no-repeat; 
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) ),url(https://placehold.co/200x300);
+    background-repeat: no-repeat;
     background-size: cover;
+}
+
+.salad-suggested {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) ),url(/images/greek-salad.jpg);
+}
+
+.olives-suggested {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) ),url(/images/Olives.jpg);
 }
 
 .cart-img {
     width: 200px;
     height: inherit;
-    background-image: url(https://placehold.co/200x300);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.img-selection--souvalaki {
+    background-image: url(/images/souvlaki.jpg);
 }
 
 @media screen and (max-width:1000px) {
@@ -765,14 +748,15 @@ footer {
     }
 
     .cart-img {
-        width: 100px;
+        width: 30vw;
     }
 }
 
 /* formatting of cart based on the amount of items */
 
-.cart-table:nth-child(1) {        
-    border-radius: 1em 1em 0 0;
+.cart-table:first-child {        
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
 .cart-table:nth-child(n + 2) {
@@ -782,8 +766,9 @@ footer {
 }
 
 
-.cart-table:nth-last-child(1) {
-    border-radius: 0 0 1em 1em;
+.cart-table:last-child {
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 .button--order {
@@ -882,6 +867,21 @@ footer {
     text-transform: uppercase;
 }
 
+.suggestion-contents {
+    color: var(--white);
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+div > .suggestion-contents {
+    padding-bottom: 0;
+}
+
+td > .suggestion-contents {
+    vertical-align: bottom;
+    padding-bottom: auto;
+}
+
 .cart-descrip {
     height: inherit;
     display: flex;
@@ -914,5 +914,24 @@ footer {
     .summary-box {
         border-radius: 0;
         margin-bottom: 20px;
+    }
+
+    .in-box-title, .suggestion-contents {
+        font-size: 4vw;
+    }
+
+    .button--action {
+        width: 7vw;
+        height: 7vw;
+    }
+    
+    .square-button-image {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .cart-title {
+        padding-left: 20px;
+        font-size: 9vw;
     }
 }
