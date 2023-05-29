@@ -739,6 +739,7 @@ footer {
 
     .cart-suggested-title {
         margin-left: 20px;
+        font-size: 4vw
     }
 
     .cart-order-summary {
@@ -839,6 +840,7 @@ footer {
 .cart-suggested-title {
     grid-column: 2;
     grid-row: 3;
+    padding-bottom: 0;
 }
 .element-order-summary {
     font-size: 1.5rem;
