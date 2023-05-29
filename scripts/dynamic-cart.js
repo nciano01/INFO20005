@@ -95,6 +95,8 @@ function itemAddition() {
     /* adds to the table */
     var table = document.getElementsByClassName('cart-items')[0];
     table.innerHTML += '<div class="cart-table"> <div class="cart-img img-selection--' + event.currentTarget.id + '"></div> <div class="cart-descrip"><h2 class="in-box-title">' + productInfo[0].innerHTML + '</h2><table class="table-order-actions"><tr><td class="bottom"><h2 class="in-box-title item-price">' + productInfo[1].innerHTML + '</h2></td><td class="square-col"><button class="button--action"><img src="images/modify.png" class="square-button-image"></button></td><td class="square-col"><button class="button--action button-delete"><img src="images/bin.png" class="square-button-image"></button></td></tr></table></div></div>';
+    /* re-calculates price */
+    priceCalc();
     /* re-calculates cart height */
     cartHeightEquivalence();
     /* re-adds delete functionality to buttons */
