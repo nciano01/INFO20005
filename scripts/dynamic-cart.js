@@ -107,28 +107,35 @@ function itemAddition() {
 }
 
 quantityAdditionButtons = document.getElementsByClassName('addition');
-
-for (var i=0; i<quantityAdditionButtons.length; i++) {
-    quantityAdditionButtons[i].addEventListener("click", quantityAdd);
-}
-
-function quantityAdd() {
-    quantityHTML = event.currentTarget.parentNode;
-    var currQuantity = quantityHTML.getElementsByTagName('p')[0].innerHTML * 1;
-    currQuantity += 1;
-    quantityHTML.getElementsByTagName('p')[0].innerHTML = currQuantity;
-}
-
 quantitySubtractionButtons = document.getElementsByClassName('subtraction');
 
 for (var i=0; i<quantitySubtractionButtons.length; i++) {
-    quantitySubtractionButtons[i].addEventListener("click", quantitySubtract);
+    quantityAdditionButtons[i].addEventListener("click", quantityModify);
+    quantitySubtractionButtons[i].addEventListener("click", quantityModify);
 }
 
-function quantitySubtract() {
+function quantityModify() {
     quantityHTML = event.currentTarget.parentNode;
     var currQuantity = quantityHTML.getElementsByTagName('p')[0].innerHTML * 1;
-    currQuantity -= 1;
+    var type = event.currentTarget.className;
+    if (type == 'addition') {
+        quantityTable = quantityHTML.parentNode.parentNode;
+        currPrice = quantityTable.parentNode.getElementsByClassName("item-price")[0].innerHTML.slice(1) * 1;
+        updatedPrice = currPrice + (currPrice / currQuantity);
+        displayPrice = (Math.round(updatedPrice * 100) / 100).toFixed(2);
+        quantityTable.parentNode.getElementsByClassName("item-price")[0].innerHTML = "$" + displayPrice;
+        priceCalc();
+        currQuantity += 1;
+    }
+    else {
+        quantityTable = quantityHTML.parentNode.parentNode;
+        currPrice = quantityTable.parentNode.getElementsByClassName("item-price")[0].innerHTML.slice(1) * 1;
+        updatedPrice = currPrice - (currPrice / currQuantity);
+        displayPrice = (Math.round(updatedPrice * 100) / 100).toFixed(2);
+        quantityTable.parentNode.getElementsByClassName("item-price")[0].innerHTML = "$" + displayPrice;
+        priceCalc();
+        currQuantity -= 1;
+    }
     quantityHTML.getElementsByTagName('p')[0].innerHTML = currQuantity;
     if (currQuantity == 0) {
         itemRemovalQuantity();
