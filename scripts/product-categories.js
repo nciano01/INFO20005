@@ -121,13 +121,6 @@ function mainCourseProducts() {
         clickedDessert.style.backgroundColor = "var(--white)";
         clickedDessert.style.borderColor = "var(--color-secondary)";
 
-        /* tried to append the elements to new container but it didn't do anything */
-        const originalCont = document.getElementsByClassName("product-list")[0];
-        const contChild = originalCont.childNodes;
-        const newCont = document.createElement("div");
-        for (var i=0; i < contChild.length; i++) {
-            newCont.appendChild(contChild[i].cloneNode(true));
-        }
     }
     else {
         document.getElementById('mezze').style.display = 'none';
