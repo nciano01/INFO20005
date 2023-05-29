@@ -97,7 +97,6 @@ function mainCourseProducts() {
         var mainElems = document.getElementsByClassName('main');
             for (var i=0; i<mainElems.length; i++) {
                 mainElems[i].style.display = 'block';
-                main
             }
         var mainElems = document.getElementsByClassName('sides');
             for (var i=0; i<mainElems.length; i++) {
