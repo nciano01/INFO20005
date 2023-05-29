@@ -724,8 +724,18 @@ footer {
     background-size: cover;
 }
 
-.img-selection--souvalaki {
+/* cart product images */
+
+.img-selection--souvlaki {
     background-image: url(/images/souvlaki.jpg);
+}
+
+.img-selection--salad {
+    background-image: url(/images/greek-salad.jpg);
+}
+
+.img-selection--olives {
+    background-image: url(/images/Olives.jpg);
 }
 
 @media screen and (max-width:1000px) {
