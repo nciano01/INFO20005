@@ -644,6 +644,7 @@ footer {
 
 .qty-cart-button {
     display: flex;
+    gap: 12px;
 }
 
 .total-price {
