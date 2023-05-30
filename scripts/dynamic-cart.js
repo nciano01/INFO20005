@@ -1,3 +1,4 @@
+window.addEventListener("load", quantityCalc);
 window.addEventListener("load", priceCalc);
 window.addEventListener("load", cartHeightEquivalence);
 window.addEventListener("resize", cartHeightEquivalence);
@@ -27,6 +28,18 @@ function cartHeightEquivalence() {
     }
 }
 
+function quantityCalc() {
+    var quantityHTML = document.getElementsByClassName('quantity');
+    for (var i=0; i<quantityHTML.length; i++) {
+        var currQuantity = quantityHTML[i].getElementsByTagName('p')[0].innerHTML * 1;
+        var quantityTable = quantityHTML[i].parentNode.parentNode;
+        var currPrice = quantityTable.parentNode.getElementsByClassName("item-price")[0].innerHTML.slice(1) * 1;
+        var updatedPrice = currPrice * currQuantity;
+        var displayPrice = (Math.round(updatedPrice * 100) / 100).toFixed(2);
+        quantityTable.parentNode.getElementsByClassName("item-price")[0].innerHTML = "$" + displayPrice;
+    }
+}
+
 function priceCalc() {
     var allPrices = document.getElementsByClassName('item-price');
     var totalPrice = 0;
@@ -34,7 +47,7 @@ function priceCalc() {
         var currPrice = allPrices[i].innerHTML.slice(1) * 1;
         totalPrice += currPrice;
     }
-    textPrice = (Math.round(totalPrice * 100) / 100).toFixed(2);
+    var textPrice = (Math.round(totalPrice * 100) / 100).toFixed(2);
     document.getElementsByClassName('subtotal')[0].innerHTML = "$" + textPrice;
 
     /* get delivery price */
@@ -92,19 +105,19 @@ function quantityModify() {
     var currQuantity = quantityHTML.getElementsByTagName('p')[0].innerHTML * 1;
     var type = event.currentTarget.className;
     if (type == 'addition') {
-        quantityTable = quantityHTML.parentNode.parentNode;
-        currPrice = quantityTable.parentNode.getElementsByClassName("item-price")[0].innerHTML.slice(1) * 1;
-        updatedPrice = currPrice + (currPrice / currQuantity);
-        displayPrice = (Math.round(updatedPrice * 100) / 100).toFixed(2);
+        var quantityTable = quantityHTML.parentNode.parentNode;
+        var currPrice = quantityTable.parentNode.getElementsByClassName("item-price")[0].innerHTML.slice(1) * 1;
+        var updatedPrice = currPrice + (currPrice / currQuantity);
+        var displayPrice = (Math.round(updatedPrice * 100) / 100).toFixed(2);
         quantityTable.parentNode.getElementsByClassName("item-price")[0].innerHTML = "$" + displayPrice;
         priceCalc();
         currQuantity += 1;
     }
     else {
-        quantityTable = quantityHTML.parentNode.parentNode;
-        currPrice = quantityTable.parentNode.getElementsByClassName("item-price")[0].innerHTML.slice(1) * 1;
-        updatedPrice = currPrice - (currPrice / currQuantity);
-        displayPrice = (Math.round(updatedPrice * 100) / 100).toFixed(2);
+        var quantityTable = quantityHTML.parentNode.parentNode;
+        var currPrice = quantityTable.parentNode.getElementsByClassName("item-price")[0].innerHTML.slice(1) * 1;
+        var updatedPrice = currPrice - (currPrice / currQuantity);
+        var displayPrice = (Math.round(updatedPrice * 100) / 100).toFixed(2);
         quantityTable.parentNode.getElementsByClassName("item-price")[0].innerHTML = "$" + displayPrice;
         priceCalc();
         currQuantity -= 1;
