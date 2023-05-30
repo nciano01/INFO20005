@@ -39,6 +39,17 @@
         <div class="content">
             <div class="order-elements">
                 <h2 class="cart-title">Your details</h2>
+                <form method="POST">
+                    <label for="name-id">Name on card</label>
+                    <input id="name-id" name="full-name">
+                    <label for="card-id">Card number</label>
+                    <input id="card-id" name="card-number">
+                    <label for="date-id">Expiration date</label>
+                    <input id="date-id" name="exp-date">
+                    <label for="code-id">Security code</label>
+                    <input id="code-id" name="sec-code">
+                    <button type="submit">Proceed to pay</button>
+                </form>
                 <div class="order-summary">
                     <div class="cart-confirmation">
                         <div class="cart-items">
