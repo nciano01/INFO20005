@@ -102,3 +102,13 @@ h4 {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+h5 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
