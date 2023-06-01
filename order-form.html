@@ -39,41 +39,43 @@
         <div class="content">
             <div class="order-elements">
                 <h2 class="cart-title">Your details</h2>
-                <form method="POST" class="delivery-form">
-                    <div class="full-name">
-                        <div class="first">
-                            <label for="firstname-id">First name</label>
-                            <input id="firstname-id" name="first-name">
+                <div class="forms">
+                    <form method="POST" class="delivery-form">
+                        <div class="full-name">
+                            <div class="first">
+                                <label for="firstname-id">First name</label>
+                                <input id="firstname-id" name="first-name">
+                            </div>
+                            <div class="last">
+                                <label for="lastname-id">Last name</label>
+                                <input id="lastname-id" name="last-name">
+                            </div>
                         </div>
-                        <div class="last">
-                            <label for="lastname-id">Last name</label>
-                            <input id="lastname-id" name="last-name">
+                        <label for="address-id">Delivery address</label>
+                        <input id="address-id" name="delivery-address">
+                        <label for="time-id">Delivery time</label>
+                        <input id="time-id" name="delivery-time">
+                        <label for="phone-id">Phone number</label>
+                        <input id="phone-id" name="phone">
+                    </form>
+                    <form method="POST" class="payment-form">
+                        <label for="cardname-id">Name on card</label>
+                        <input id="cardname-id" name="full-name">
+                        <label for="card-id">Card number</label>
+                        <input id="card-id" name="card-number">
+                        <div class="date-code">
+                            <div class="exp-date">
+                                <label for="date-id">Expiration (mm/yy)</label>
+                                <input id="date-id" name="exp-date">
+                            </div>
+                            <div class="sec-code">
+                                <label for="code-id">Security code</label>
+                                <input id="code-id" name="sec-code">
+                            </div>
                         </div>
-                    </div>
-                    <label for="address-id">Delivery address</label>
-                    <input id="address-id" name="delivery-address">
-                    <label for="time-id">Delivery time</label>
-                    <input id="time-id" name="delivery-time">
-                    <label for="phone-id">Phone number</label>
-                    <input id="phone-id" name="phone">
-                </form>
-                <form method="POST" class="payment-form">
-                    <label for="cardname-id">Name on card</label>
-                    <input id="cardname-id" name="full-name">
-                    <label for="card-id">Card number</label>
-                    <input id="card-id" name="card-number">
-                    <div class="date-code">
-                        <div class="exp-date">
-                            <label for="date-id">Expiration (mm/yy)</label>
-                            <input id="date-id" name="exp-date">
-                        </div>
-                        <div class="sec-code">
-                            <label for="code-id">Security code</label>
-                            <input id="code-id" name="sec-code">
-                        </div>
-                    </div>
-                    <button type="submit">Proceed to pay</button>
-                </form>
+                        <button type="submit" class="primary-button">Proceed to pay</button>
+                    </form>
+                </div>
                 <div class="order-summary">
                     <div class="cart-confirmation">
                         <div class="cart-items">
