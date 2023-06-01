@@ -40,10 +40,16 @@
             <div class="order-elements">
                 <h2 class="cart-title">Your details</h2>
                 <form method="POST" class="delivery-form">
-                    <label for="firstname-id">First name</label>
-                    <input id="firstname-id" name="first-name">
-                    <label for="lastname-id">Last name</label>
-                    <input id="lastname-id" name="last-name">
+                    <div class="full-name">
+                        <div class="first">
+                            <label for="firstname-id">First name</label>
+                            <input id="firstname-id" name="first-name">
+                        </div>
+                        <div class="last">
+                            <label for="lastname-id">Last name</label>
+                            <input id="lastname-id" name="last-name">
+                        </div>
+                    </div>
                     <label for="address-id">Delivery address</label>
                     <input id="address-id" name="delivery-address">
                     <label for="time-id">Delivery time</label>
@@ -56,13 +62,15 @@
                     <input id="cardname-id" name="full-name">
                     <label for="card-id">Card number</label>
                     <input id="card-id" name="card-number">
-                    <div class="date">
-                        <label for="date-id">Expiration date</label>
-                        <input id="date-id" name="exp-date">
-                    </div>
-                    <div class="code">
-                        <label for="code-id">Security code</label>
-                        <input id="code-id" name="sec-code">
+                    <div class="date-code">
+                        <div class="exp-date">
+                            <label for="date-id">Expiration (mm/yy)</label>
+                            <input id="date-id" name="exp-date">
+                        </div>
+                        <div class="sec-code">
+                            <label for="code-id">Security code</label>
+                            <input id="code-id" name="sec-code">
+                        </div>
                     </div>
                     <button type="submit">Proceed to pay</button>
                 </form>
