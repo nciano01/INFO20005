@@ -715,6 +715,12 @@ footer {
     gap: 6px;
 }
 
+select {
+    width: 100%;
+    background-color: var(--white);
+    border-color: var(--medium-grey);
+}
+
 input {
     padding: 0.3rem;
     border-radius: 0.3rem;
