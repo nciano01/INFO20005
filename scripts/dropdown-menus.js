@@ -1,14 +1,15 @@
 document.getElementsByClassName("delivery-t1")[0].style.display = "block";
 document.getElementsByClassName("delivery-t2")[0].style.display = "none";
 
-window.addEventListener("load", selectiveDropdown);
+var dropdown = document.getElementById("day-id");
+dropdown.addEventListener("change", selectiveDropdown);
 
 function selectiveDropdown() {
     var selection = document.getElementById("day-id").value;
-    if (selection == monday || selection == tuesday || selection == wednesday || selection == thursday || selection == friday) {
+    if (selection == "monday" || selection == "tuesday" || selection == "wednesday" || selection == "thursday" || selection == "friday") {
         document.getElementsByClassName("delivery-t1")[0].style.display = "block";
         document.getElementsByClassName("delivery-t2")[0].style.display = "none";
-    } else if (selection == saturday || selection == sunday) {
+    } else if (selection == "saturday" || selection == "sunday") {
         document.getElementsByClassName("delivery-t1")[0].style.display = "none";
         document.getElementsByClassName("delivery-t2")[0].style.display = "block";
     } else {
