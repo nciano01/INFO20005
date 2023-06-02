@@ -728,6 +728,13 @@ input {
     border: 1.5px var(--color-secondary) solid;
 }
 
+.delivery-window {
+    display: flex;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .cart-items {
     grid-column: 2;
     grid-row: 2;
