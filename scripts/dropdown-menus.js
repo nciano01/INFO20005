@@ -1,3 +1,8 @@
+document.getElementsByClassName("delivery-t1")[0].style.display = "block";
+document.getElementsByClassName("delivery-t2")[0].style.display = "none";
+
+window.addEventListener("load", selectiveDropdown);
+
 function selectiveDropdown() {
     var selection = document.getElementById("day-id").value;
     if (selection == monday || selection == tuesday || selection == wednesday || selection == thursday || selection == friday) {
