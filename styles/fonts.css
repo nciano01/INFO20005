@@ -35,9 +35,11 @@ h2 {
   padding-bottom: 20px;
 }
 
-p {
+p, label {
   font-family: 'Mentone', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
+}
+p {
   padding-bottom: 20px;
 }
 
