@@ -15,10 +15,10 @@ function selectiveDropdown() {
     } else {
         var date = new Date();
         var day = date.getDay();
-        if (day == monday || day == tuesday || day == wednesday || day == thursday || day == friday) {
+        if (day == 1 || day == 2 || day == 3 || day == 4 || day == 5) {
             document.getElementsByClassName("delivery-t1")[0].style.display = "block";
             document.getElementsByClassName("delivery-t2")[0].style.display = "none";
-        } else if (day == saturday || day == sunday) {
+        } else if (day == 0 || day == 6) {
             document.getElementsByClassName("delivery-t1")[0].style.display = "none";
             document.getElementsByClassName("delivery-t2")[0].style.display = "block";
         }
