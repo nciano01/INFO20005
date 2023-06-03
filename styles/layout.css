@@ -652,6 +652,18 @@ footer {
     margin-top: 25px;
 }
 
+@media screen and (max-width:670px) {
+    .productpg-card {
+        flex-direction: column;
+    } 
+
+    .img-holder > img {
+        width: 645px;
+        height: 260px;
+        object-fit: cover;
+    }
+}
+
 /* cart layout */
 
 .cart-elements {
