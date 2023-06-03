@@ -289,16 +289,15 @@ header {
 .right-links {
     display: flex;
     gap: 20px;
+    flex-direction: row-reverse;
 }
 
-#left-links {
-    display: flex;
-    gap: 20px;
+.link-width {
+    width: 350px;
 }
 
-#right-links {
-    display: flex;
-    gap: 20px;
+.link-width--right {
+    margin:0;
 }
 
 /* Mobile nav layout */
@@ -1046,5 +1045,9 @@ td > .suggestion-contents {
     .cart-title {
         padding-left: 20px;
         font-size: 9vw;
+    }
+
+    .cart-confirmation, .cart-order-summary, .summary-box {
+        position: relative;
     }
 }
