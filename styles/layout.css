@@ -578,20 +578,6 @@ footer {
     object-fit: cover;
 }
 
-@media screen and (max-width:1000px) {
-    .productpg-card {
-        display: block;
-    }
-    .img-holder {
-        display: block;
-    }
-    .img-holder > img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-    }
-}
-
 .product-descrip {
     padding: 20px;
 }
