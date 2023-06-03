@@ -40,9 +40,7 @@ document.getElementsByClassName("backdrop-image--takeaway")[0].onclick = functio
         document.getElementsByClassName("content")[0].style.pointerEvents = "auto";
         /* move left arrow to top, repurpose as back button */
         document.getElementsByClassName("arrow--left")[0].style.position = "absolute";
-        document.getElementsByClassName("arrow--left")[0].style.gridRow = "2";
-        document.getElementsByClassName("arrow--left")[0].style.gridColumn = "1";
-        document.getElementsByClassName("arrow--left")[0].style.marginLeft = "10px";
+        document.getElementsByClassName("arrow--left")[0].style.left = "10px";
         document.getElementsByClassName("arrow--left")[0].style.marginTop = "10px";
         document.getElementsByClassName("arrow--left")[0].style.width = "10vw";
         document.getElementsByClassName("arrow--left")[0].style.height = "10vw";
@@ -96,9 +94,7 @@ document.getElementsByClassName("backdrop-image")[0].onclick = function takeaway
         document.getElementsByClassName("content")[0].style.pointerEvents = "auto";
         /* move left arrow to top, repurpose as back button */
         document.getElementsByClassName("arrow--left")[0].style.position = "absolute";
-        document.getElementsByClassName("arrow--left")[0].style.gridRow = "2";
-        document.getElementsByClassName("arrow--left")[0].style.gridColumn = "1";
-        document.getElementsByClassName("arrow--left")[0].style.marginLeft = "10px";
+        document.getElementsByClassName("arrow--left")[0].style.left = "10px";
         document.getElementsByClassName("arrow--left")[0].style.marginTop = "10px";
         document.getElementsByClassName("arrow--left")[0].style.width = "10vw";
         document.getElementsByClassName("arrow--left")[0].style.height = "10vw";
