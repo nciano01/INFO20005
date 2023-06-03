@@ -13,6 +13,7 @@ function selectiveDropdown() {
         document.getElementsByClassName("delivery-t1")[0].style.display = "none";
         document.getElementsByClassName("delivery-t2")[0].style.display = "block";
     } else {
+        var date = new Date();
         var day = date.getDay();
         if (day == monday || day == tuesday || day == wednesday || day == thursday || day == friday) {
             document.getElementsByClassName("delivery-t1")[0].style.display = "block";
