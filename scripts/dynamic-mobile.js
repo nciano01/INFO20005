@@ -35,7 +35,7 @@ document.getElementsByClassName("backdrop-image--takeaway")[0].onclick = functio
         document.getElementsByClassName("hero-logo")[0].style.display = "none";
         /* change grid format */
         document.getElementsByClassName("homegrid")[0].style.gridTemplateColumns = "0.5fr 10fr 0.5fr";
-        document.getElementsByClassName("homegrid")[0].style.gridTemplateRows = "0.5fr 1fr 3fr 0.5fr 0.5fr 10fr 4fr 1fr 0.5fr";
+        document.getElementsByClassName("homegrid")[0].style.gridTemplateRows = "0.5fr 1fr 3fr 0.5fr 0.5fr 10fr 0.5fr 3.5fr 1fr 0.5fr";
         /* allow for clicking again */
         document.getElementsByClassName("content")[0].style.pointerEvents = "auto";
         /* move left arrow to top, repurpose as back button */
@@ -89,7 +89,7 @@ document.getElementsByClassName("backdrop-image")[0].onclick = function takeaway
         document.getElementsByClassName("hero-logo")[0].style.display = "none";
         /* change grid format */
         document.getElementsByClassName("homegrid")[0].style.gridTemplateColumns = "0.5fr 10fr 0.5fr";
-        document.getElementsByClassName("homegrid")[0].style.gridTemplateRows = "0.5fr 1fr 3fr 0.5fr 0.5fr 10fr 4fr 1fr 0.5fr";
+        document.getElementsByClassName("homegrid")[0].style.gridTemplateRows = "0.5fr 1fr 3fr 0.5fr 0.5fr 10fr 0.5fr 3.5fr 1fr 0.5fr";
         /* allow for clicking again */
         document.getElementsByClassName("content")[0].style.pointerEvents = "auto";
         /* move left arrow to top, repurpose as back button */
