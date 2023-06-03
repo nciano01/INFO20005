@@ -922,8 +922,22 @@ input {
     border-width: 0px 0px 4px 4px;
     border-color: var(--color-secondary);
     margin: 0 1rem 1rem 1rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
 }
 
+.button-modify {
+    background-image: url('/images/modify.png');
+}
+
+.button-delete {
+    background-image: url('/images/bin.png');
+}
+
+.button-add {
+    background-image: url('/images/plus.png');
+}
 
 .square-col {
     width: 5rem;
@@ -1069,7 +1083,7 @@ td > .suggestion-contents {
         position: relative;
     }
 
-    .square-col {
+    .cart-action {
         display: none;
     }
 
