@@ -929,6 +929,10 @@ input {
     width: 5rem;
 }
 
+.button-overflow {
+    display: none;
+}
+
 .square-button-image {
     width: 1.5rem;
     height: 1.5rem;
@@ -1063,5 +1067,13 @@ td > .suggestion-contents {
 
     .cart-confirmation, .cart-order-summary, .summary-box {
         position: relative;
+    }
+
+    .square-col {
+        display: none;
+    }
+
+    .button-overflow {
+        display: block;
     }
 }
