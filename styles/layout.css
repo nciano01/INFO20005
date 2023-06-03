@@ -577,6 +577,12 @@ footer {
     object-fit: cover;
 }
 
+@media screen and (max-width:1000px) {
+    .img-holder > img {
+        width: 25vw;
+    }
+}
+
 .product-descrip {
     padding: 20px;
 }
