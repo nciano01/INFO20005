@@ -2,6 +2,7 @@ document.getElementsByClassName("delivery-t1")[0].style.display = "block";
 document.getElementsByClassName("delivery-t2")[0].style.display = "none";
 
 var dropdown = document.getElementById("day-id");
+var timeOne = document.getElementById("time-id")[1];
 window.addEventListener("load", checkDay);
 dropdown.addEventListener("change", selectiveDropdown);
 
