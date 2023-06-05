@@ -1,6 +1,7 @@
 window.addEventListener("load", heightEquivalence);
 window.addEventListener("resize", heightEquivalence);
 
+/* function to dynamically resize the homepage images */
 function heightEquivalence() {
     var navHeight = document.getElementsByTagName("header")[0].scrollHeight;
     document.getElementsByClassName("homegrid")[0].style.height = "calc(100vh - " + navHeight + "px)";

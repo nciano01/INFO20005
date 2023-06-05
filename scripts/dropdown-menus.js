@@ -6,7 +6,7 @@ var timeOne = document.getElementById("time-id")[1];
 window.addEventListener("load", checkDay);
 dropdown.addEventListener("change", selectiveDropdown);
 
-/* removes today option if the restaurant is closed when user visits*/
+/* removes today option if the restaurant is closed when user visits */
 function checkDay() {
     var date = new Date();
     var day = date.getDay();
@@ -15,6 +15,7 @@ function checkDay() {
     }
 }
 
+/* filters possible order times depending on the day */
 function selectiveDropdown() {
     var selection = document.getElementById("day-id").value;
     if (selection == "wednesday" || selection == "thursday" || selection == "friday") {
