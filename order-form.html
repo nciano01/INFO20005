@@ -63,8 +63,6 @@
                                 <label for="day-id">Delivery day</label>
                                     <select id="day-id" name="delivery-day">
                                         <option value="today">Today</option>
-                                        <option value="monday">Monday</option>
-                                        <option value="tuesday">Tuesday</option>
                                         <option value="wednesday">Wednesday</option>
                                         <option value="thursday">Thursday</option>
                                         <option value="friday">Friday</option>
@@ -113,8 +111,9 @@
                         <input id="card-id" name="card-number" required pattern="^\d{16}$">
                         <div class="date-code">
                             <div class="exp-date">
-                                <label for="date-id">Expiration (mm/yy)</label>
                                 <div class="date-code">
+                                    <label for="month-id">Expiry month</label>
+                                    <label for="year-id">Expiry year</label>
                                     <select id="month-id" name="cc-month">
                                         <option value="1">January</option>
                                         <option value="2">February</option>
@@ -136,6 +135,8 @@
                                         <option value="2026">2026</option>
                                         <option value="2027">2027</option>
                                         <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
                                     </select>
                                 </div>   
                             </div>
@@ -254,8 +255,6 @@
                 </div>
             </div>
         </footer>
-
-        <script src="scripts/cart-height.js"></script>
         <script src="scripts/dynamic-cart.js"></script>
         <script src="scripts/mobile-nav-activation.js"></script>
         <script src="scripts/footer.js"></script>
