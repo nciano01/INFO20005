@@ -13,21 +13,24 @@ function cartHeightEquivalence() {
         descripItemCount[i].removeAttribute("style");
     }
     console.log(cartItemCount);
+    /* checks heights of each item, gets the tallest option */
     var maxHeight = 0;
     for (var i=0; i<cartItemCount.length; i++) {
         if (maxHeight < cartItemCount[i].scrollHeight ) {
             maxHeight = cartItemCount[i].scrollHeight;
         }
     }
+
+    /* sets each item's height to the match the tallest */
     for (var i=0; i<cartItemCount.length; i++) {
         cartItemCount[i].style.height = maxHeight + "px";
     }
-
     for (var i=0; i<descripItemCount.length; i++) {
         descripItemCount[i].style.height = maxHeight + "px";
     }
 }
 
+/* calculates pricing based on quantity */
 function quantityCalc() {
     var quantityHTML = document.getElementsByClassName('quantity');
     for (var i=0; i<quantityHTML.length; i++) {
@@ -40,7 +43,9 @@ function quantityCalc() {
     }
 }
 
+/* calculates the cart pricing*/
 function priceCalc() {
+    /* adds individual product prices */
     var allPrices = document.getElementsByClassName('item-price');
     var totalPrice = 0;
     for (var i=0; i<allPrices.length; i++) {
@@ -50,7 +55,7 @@ function priceCalc() {
     var textPrice = (Math.round(totalPrice * 100) / 100).toFixed(2);
     document.getElementsByClassName('subtotal')[0].innerHTML = "$" + textPrice;
 
-    /* get delivery price */
+    /* calculate delivery price */
     var cartItemCount = document.getElementsByClassName('cart-table').length;
     if (cartItemCount > 0) {
         document.getElementsByClassName('delivery')[0].innerHTML = "$10.00"
@@ -58,11 +63,9 @@ function priceCalc() {
     else {
         document.getElementsByClassName('delivery')[0].innerHTML = "$0.00"
     }
-
     var deliveryPrice = document.getElementsByClassName('delivery')[0].innerHTML.slice(1) * 1;
 
     /* calculate total */
-
     totalPrice += deliveryPrice;
     textPrice = (Math.round(totalPrice * 100) / 100).toFixed(2);
     document.getElementsByClassName('total')[0].innerHTML = "$" + textPrice;
@@ -148,11 +151,11 @@ function itemRemovalQuantity() {
 }
 
 addButtons = document.getElementsByClassName('button-add');
-
 for (var i=0; i<addButtons.length; i++) {
     addButtons[i].addEventListener("click", itemAddition);
 }
 
+/* handles the addition of suggested items */
 function itemAddition() {
     /* moves up from the hierarchy, staring from the button that was clicked */
     var buttons = event.currentTarget.parentNode.parentNode;
