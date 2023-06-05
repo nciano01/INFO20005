@@ -46,6 +46,7 @@ h3 {
 }
 
 h4 {
+  font-family: 'TTNooksBold', 'Times New Roman', serif;
   text-transform: uppercase;
   font-weight: 600;
   color: var(--black);
