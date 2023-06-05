@@ -44,7 +44,7 @@
             <div class="order-elements">
                 <h1 class="cart-title">Order form</h1>
                 <div class="forms">
-                    <form method="POST" class="delivery-form">
+                    <form method="POST" id="main-form" class="delivery-form" action="order-confirmation.html">
                         <h4>Delivery details</h3>
                         <div class="full-name">
                             <div class="first">
@@ -212,7 +212,7 @@
                             </tr>
                         </table>
                         <button class="button--order" onclick="location.href='cart.html'">Return to cart</button>
-                        <button class="button--order" onclick="location.href='order-confirmation.html'">Submit order</button>
+                        <button class="button--order" form="main-form" type="submit">Submit order</button>
                     </div>
                 </div>
             </div>
