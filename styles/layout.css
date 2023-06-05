@@ -660,6 +660,7 @@ footer {
 }
 
 /* mobile optimisation for product page */
+
 @media screen and (max-width:670px) {
     .product-header {
         margin-bottom: 10px;
@@ -700,66 +701,6 @@ footer {
     grid-row: 1;
     grid-column: 2;
     color: var(--white);
-}
-
-.forms {
-    grid-column: 2;
-    background-color: var(--white);
-    padding: 20px;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.delivery-form {
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.full-name,
-.date-code {
-    display: flex;
-    gap: 6px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.first,
-.last,
-.exp-date,
-.sec-code {
-    display: flex;
-    flex-direction: column;
-}
-
-.payment-form {
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-select {
-    width: 100%;
-    background-color: var(--white);
-    border-color: var(--medium-grey);
-}
-
-input {
-    padding: 0.3rem;
-    border-radius: 0.3rem;
-    background-color: var(--white);
-    border: 1.5px var(--color-secondary) solid;
-}
-
-.delivery-window {
-    display: flex;
-    gap: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .cart-items {
@@ -1104,4 +1045,66 @@ td > .suggestion-contents {
     .button-overflow {
         display: block;
     }
+}
+
+/* order form layout */
+
+.forms {
+    grid-column: 2;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.delivery-form {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.full-name,
+.date-code {
+    display: flex;
+    gap: 6px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.first,
+.last,
+.exp-date,
+.sec-code {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+select {
+    width: 100%;
+    background-color: var(--white);
+    border-color: var(--medium-grey);
+}
+
+input {
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    background-color: var(--white);
+    border: 1.5px var(--color-secondary) solid;
+}
+
+.delivery-window {
+    display: flex;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
