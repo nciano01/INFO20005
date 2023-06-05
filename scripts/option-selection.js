@@ -1,3 +1,4 @@
+/* functions handling button styling on product page */
 var totalPrice = document.querySelectorAll(".total-price h3")[0];
 
 function smallSelection() {

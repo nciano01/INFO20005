@@ -1,3 +1,4 @@
+/* functions handling the showing and hiding of the nav options on mobile */
 document.getElementsByClassName("hamburger-icon")[0].onclick = showNav;
 
 function showNav() {

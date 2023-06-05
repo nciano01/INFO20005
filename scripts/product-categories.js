@@ -1,3 +1,5 @@
+/* set of functions allowing for the filtering of products by category */
+
 document.getElementById('mezze').style.display = 'none';
 document.getElementById('popular').style.display = 'block';
 document.getElementById('main-course').style.display = 'none';

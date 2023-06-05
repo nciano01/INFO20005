@@ -1,3 +1,5 @@
+/* set of functions to handle the dynamic mobile homepage */
+
 window.addEventListener("load", addClick);
 window.addEventListener("resize", addClick);
 
@@ -7,6 +9,8 @@ var clickedState = 0;
 var takeawayClicked = 0;
 var dineInClicked = 0;
 
+
+/* adds in the click action if the mobile homepage is shown */
 function addClick() {
     /* checks window width to see what style homepage is displayed */
     if (window.innerWidth <= 1000) {
@@ -18,6 +22,7 @@ function addClick() {
     }
 }
 
+/* expands the takeaway section on click */
 document.getElementsByClassName("backdrop-image--takeaway")[0].onclick = function takeawayExpand() {
     if (window.innerWidth <= 1000 && clickedState == 0) {
         /* make background image fill */
@@ -72,7 +77,8 @@ document.getElementsByClassName("backdrop-image--takeaway")[0].onclick = functio
     }
 }
 
-document.getElementsByClassName("backdrop-image")[0].onclick = function takeawayExpand() {
+/* expands the dine-in section on click */
+document.getElementsByClassName("backdrop-image")[0].onclick = function dineinExpand() {
     if (window.innerWidth <= 1000 && clickedState == 0) {
         /* make background image fill */
         document.getElementsByClassName("backdrop-image--takeaway")[0].style.zIndex = "-1";
@@ -128,7 +134,7 @@ document.getElementsByClassName("backdrop-image")[0].onclick = function takeaway
     }
 }
 
-
+/* handles the return to the normal desktop homepage from expanded view */
 function reset() {
     if (window.innerWidth > 1000 && clickedState == 1) {
         /* remove injected CSS */
@@ -160,6 +166,7 @@ function reset() {
     }
 }
 
+/* handles the return to the normal mobile homepage from expanded view */
 document.getElementsByClassName("arrow--left")[0].onclick = function resetOnClick() {
     if (clickedState == 1) {
         /* animates the image depending on which option is active */

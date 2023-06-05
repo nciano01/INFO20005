@@ -77,6 +77,8 @@ for (var i=0; i<deleteButtons.length; i++) {
     deleteButtons[i].addEventListener("click", itemRemoval);
 }
 
+
+/* handles cart item deletion */
 function itemRemoval() {
     /* moves up from the hierarchy, staring from the button that was clicked */
     var buttons = event.currentTarget.parentNode.parentNode;
@@ -103,6 +105,7 @@ for (var i=0; i<quantitySubtractionButtons.length; i++) {
     quantitySubtractionButtons[i].addEventListener("click", quantityModify);
 }
 
+/* handles the modification of quantity */
 function quantityModify() {
     quantityHTML = event.currentTarget.parentNode;
     var currQuantity = quantityHTML.getElementsByTagName('p')[0].innerHTML * 1;
@@ -131,6 +134,7 @@ function quantityModify() {
     }
 }
 
+/* handles item deletion if quantity is 0 */
 function itemRemovalQuantity() {
     /* moves up from the hierarchy, staring from the button that was clicked */
     var button = event.currentTarget.parentNode.parentNode;

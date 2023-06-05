@@ -1,3 +1,5 @@
+/* functions allowing for the functionality of quantity button on product page */
+
 var quantity = document.getElementsByClassName("current-quantity")[0];
 var totalPrice = document.querySelectorAll(".total-price h3")[0];
 
