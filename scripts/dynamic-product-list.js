@@ -1,3 +1,5 @@
+/* function to dynamically resize the product flex based on window size */
+
 window.addEventListener("load", productListShrink);
 window.addEventListener("resize", productListShrink);
 

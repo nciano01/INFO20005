@@ -1,3 +1,5 @@
+/* function for the footer */
+
 window.addEventListener("load", footerHeight);
 window.addEventListener("resize", footerHeight);
 
