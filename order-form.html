@@ -44,8 +44,8 @@
             <div class="order-elements">
                 <h1 class="cart-title">Order form</h1>
                 <div class="forms">
-                    <form method="POST" class="delivery-form">
-                        <h4>Delivery details</h3>
+                    <form method="GET" id="main-form" class="delivery-form" action="order-confirmation.html">
+                        <h4>Delivery details</h4>
                         <div class="full-name">
                             <div class="first">
                                 <label for="firstname-id">First name</label>
@@ -106,9 +106,7 @@
                         </div>
                         <label for="phone-id">Phone number</label>
                         <input id="phone-id" name="phone">
-                    </form>
-                    <form method="POST" class="payment-form">
-                        <h4>Payment details</h3>
+                        <h4>Payment details</h4>
                         <label for="cardname-id">Name on card</label>
                         <input id="cardname-id" name="full-name">
                         <label for="card-id">Card number</label>
@@ -212,7 +210,7 @@
                             </tr>
                         </table>
                         <button class="button--order" onclick="location.href='cart.html'">Return to cart</button>
-                        <button class="button--order" onclick="location.href='order-confirmation.html'">Submit order</button>
+                        <button class="button--order" form="main-form" type="submit">Submit order</button>
                     </div>
                 </div>
             </div>
