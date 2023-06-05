@@ -9,9 +9,7 @@ function smallSelection() {
         document.getElementsByClassName('small')[0].style.color = 'var(--black)';
         document.getElementsByClassName('large')[0].style.borderColor = 'var(--light-grey)';
         document.getElementsByClassName('large')[0].style.color = 'var(--medium-grey)';
-        if (totalPrice.textContent == "$19.50") {
-            totalPrice.textContent = "$" + String((Number(totalPrice.textContent.slice(1)) - 5).toFixed(2));
-        }
+        totalPrice.textContent = "$" + String((Number(totalPrice.textContent.slice(1)) - 5).toFixed(2));
     }
 }
 
