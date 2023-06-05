@@ -13,10 +13,10 @@
             <ul class="mobile-links">
                 <li><a href="index.html" class="navlink navlink--mobile">Home</a></li>
                 <li><a href="#" class="navlink navlink--mobile">About</a></li>
-                <li><a href="#" class="navlink navlink--mobile">Contact</a></li>
                 <li><a href="#" class="navlink navlink--mobile">Menu</a></li>
                 <li><a href="#" class="navlink navlink--mobile">Dine In</a></li>
                 <li><a href="product.html" class="navlink navlink--mobile">Take Away</a></li>
+                <li><a href="cart.html" class="navlink navlink--mobile navlink--active">Cart</a></li>
             </ul>
         </div>
         <header>
@@ -25,7 +25,7 @@
                 <ul class="left-links">
                     <li><a href="index.html" class="navlink">Home</a></li>
                     <li><a href="#" class="navlink">About</a></li>
-                    <li><a href="#" class="navlink">Contact</a></li>
+                    <li><a href="#" class="navlink">Menu</a></li>
                 </ul>
             </div>
             <a href="index.html">
@@ -33,12 +33,12 @@
             </a>
             <div class="link-width link-width--right">
                 <ul class="right-links">
+                    <li><a href="cart.html" class="navlink navlink--active">Cart</a></li>
                     <li><a href="product.html" class="navlink">Take Away</a></li>
                     <li><a href="#" class="navlink">Dine In</a></li>
-                    <li><a href="#" class="navlink">Menu</a></li>
                 </ul>
             </div>
-            <img class="cart-icon" src="images/cartIcon.png">
+            <img class="cart-icon" src="images/cartIcon.png" onclick="location.href='cart.html'">
         </header>
         <div class="content">
             <div class="cart-elements">
@@ -157,16 +157,16 @@
                     <div class="product-descrip">
                         <table class="table-order-summary">
                             <tr>
-                                <td><h4 class="element-order-summary">Subtotal</h4></td>
-                                <td><h4 class="element-order-summary right subtotal">$0.00</h4></td>
+                                <td><p class="element-order-summary">Subtotal</p></td>
+                                <td><p class="element-order-summary right subtotal">$0.00</p></td>
                             </tr>
                             <tr>
-                                <td><h4 class="element-order-summary">Delivery</h4></td>
-                                <td><h4 class="element-order-summary right delivery">$0.00</h4></td>
+                                <td><p class="element-order-summary">Delivery</p></td>
+                                <td><p class="element-order-summary right delivery">$0.00</=></td>
                             </tr>
                             <tr>
-                                <td><h4 class="element-order-summary">Total</h4></td>
-                                <td><h4 class="element-order-summary right total">$0.00</h4></td>
+                                <td><p class="element-order-summary">Total</p></td>
+                                <td><p class="element-order-summary right total">$0.00</p></td>
                             </tr>
                         </table>
                         <button class="button--order" onclick="location.href='product.html'">Continue ordering</button>
@@ -191,8 +191,6 @@
                 </div>
             </div>
         </footer>
-
-        <script src="scripts/cart-height.js"></script>
         <script src="scripts/dynamic-cart.js"></script>
         <script src="scripts/mobile-nav-activation.js"></script>
         <script src="scripts/footer.js"></script>
