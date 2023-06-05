@@ -49,15 +49,15 @@
                         <div class="full-name">
                             <div class="first">
                                 <label for="firstname-id">First name</label>
-                                <input id="firstname-id" name="first-name">
+                                <input id="firstname-id" name="first-name" required>
                             </div>
                             <div class="last">
                                 <label for="lastname-id">Last name</label>
-                                <input id="lastname-id" name="last-name">
+                                <input id="lastname-id" name="last-name" required>
                             </div>
                         </div>
                         <label for="address-id">Delivery address</label>
-                        <input id="address-id" name="delivery-address">
+                        <input id="address-id" name="delivery-address" required>
                         <div class="delivery-window">
                             <div class="delivery-d">
                                 <label for="day-id">Delivery day</label>
@@ -105,20 +105,43 @@
                             </div>
                         </div>
                         <label for="phone-id">Phone number</label>
-                        <input id="phone-id" name="phone">
+                        <input id="phone-id" name="phone" required pattern="^\d{10}$">
                         <h4>Payment details</h4>
                         <label for="cardname-id">Name on card</label>
-                        <input id="cardname-id" name="full-name">
+                        <input id="cardname-id" name="full-name" required>
                         <label for="card-id">Card number</label>
-                        <input id="card-id" name="card-number">
+                        <input id="card-id" name="card-number" required pattern="^\d{16}$">
                         <div class="date-code">
                             <div class="exp-date">
                                 <label for="date-id">Expiration (mm/yy)</label>
-                                <input id="date-id" name="exp-date">
+                                <div class="date-code">
+                                    <select id="month-id" name="cc-month">
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                    <select id="year-id" name="cc-year">
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                    </select>
+                                </div>   
                             </div>
                             <div class="sec-code">
                                 <label for="code-id">Security code</label>
-                                <input id="code-id" name="sec-code">
+                                <input id="code-id" name="sec-code" pattern="^\d{3}$" required>
                             </div>
                         </div>
                     </form>
